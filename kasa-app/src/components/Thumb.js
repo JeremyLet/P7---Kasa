@@ -1,22 +1,14 @@
 import "../assets/styles/Thumb.css";
+import { Link } from "react-router-dom";
 
-/* Appel des datas du JSON :
-
-let data = require("../logements.json");
-
-*/
-
-const LocationName = "Titre de la location";
-
-export default function Thumb() {
+export default function Thumb(props) {
 	return (
-		<div className="Thumb">
-			{/* Exemple de partie dynamique
-			<p>{data[3].title}</p>		
-			*/}
-			<div>
-				<p>{LocationName}</p>
+		<Link to="/FicheLogement">
+			<div className="Thumb">
+				<div>
+					<p>{props.children}</p>
+				</div>
 			</div>
-		</div>
+		</Link>
 	);
 }
