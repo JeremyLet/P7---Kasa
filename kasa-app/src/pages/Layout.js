@@ -1,12 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
-import LOGO from "../assets/images/LOGO.png";
+import LOGOHeader from "../assets/images/LOGOHeader.png";
 import "../assets/styles/Layout.css";
 
 const Layout = () => {
 	return (
 		<>
 			<header>
-				<img src={LOGO} alt="logo-kasa" className=".LOGO" />
+				<img src={LOGOHeader} alt="logo-kasa" className="LOGOHeader" />
 				<nav>
 					<ul>
 						<li>
