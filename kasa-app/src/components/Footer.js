@@ -1,11 +1,11 @@
 import "../assets/styles/Footer.css";
-import LOGOFooter from "../assets/images/LOGOFooter.png";
+import LogoFooter from "../components/LogoFooter";
 
 export default function Footer() {
 	return (
 		<footer>
 			<div>
-				<img src={LOGOFooter} alt="" className="LOGOFooter" />
+				<LogoFooter />
 				<p>© 2020 KASA All rights reserved</p>
 			</div>
 		</footer>
