@@ -1,4 +1,4 @@
-footer {
+.FooterBloc {
 	width: 100%;
 	height: 209px;
 	background-color: #000000;
@@ -8,14 +8,14 @@ footer {
 	margin-top: 25px;
 }
 
-footer div {
+.FooterDetails {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-footer p {
+.FooterDetails__text {
 	color: #ffff;
 	font-family: "Montserrat";
 	font-size: 12px;

@@ -1,0 +1,33 @@
+.__BlocError404 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.__BlocError404--Title {
+	color: #ff6060;
+	font-family: "Montserrat";
+	font-size: 288px;
+	font-weight: 700;
+	height: fit-content;
+	width: fit-content;
+	margin: 0;
+}
+
+.__BlocError404--Details {
+	color: #ff6060;
+	font-family: "Montserrat";
+	font-size: 36px;
+	font-weight: 500;
+	height: fit-content;
+	width: fit-content;
+	margin: 0;
+}
+
+.__BlocError404--returnLanding {
+	color: #ff6060;
+	font-family: "Montserrat";
+	font-size: 18px;
+	text-decoration: underline;
+}

@@ -3,10 +3,10 @@ import LogoFooter from "../components/LogoFooter";
 
 export default function Footer() {
 	return (
-		<footer>
-			<div>
+		<footer className="FooterBloc">
+			<div className="FooterDetails">
 				<LogoFooter />
-				<p>© 2020 KASA All rights reserved</p>
+				<p className="FooterDetails__text">© 2020 KASA All rights reserved</p>
 			</div>
 		</footer>
 	);

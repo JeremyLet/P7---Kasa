@@ -5,10 +5,10 @@ export default function Thumb(props) {
 	let id = props.id;
 	return (
 		<>
-			<Link to={`/FicheLogement/${id}`}>
-				<div className="Thumb">
-					<div>
-						<p>{props.children}</p>
+			<Link className="ThumbBloc__link" to={`/FicheLogement/${id}`}>
+				<div className="ThumbGeneral">
+					<div className="ThumbBloc">
+						<p className="ThumbBloc__title">{props.children}</p>
 					</div>
 				</div>
 			</Link>

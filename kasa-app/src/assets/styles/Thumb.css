@@ -1,4 +1,4 @@
-.Thumb {
+.ThumbGeneral {
 	width: 340px;
 	height: 340px;
 	background-color: rgba(255, 96, 96, 1);
@@ -6,7 +6,7 @@
 	margin: 30px;
 }
 
-.Thumb div {
+.ThumbBloc {
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(
@@ -19,7 +19,7 @@
 	align-items: flex-end;
 }
 
-.Thumb div p {
+.ThumbBloc__title {
 	color: #ffff;
 	height: 52px;
 	width: 300px;
@@ -28,4 +28,8 @@
 	margin: 20px;
 	display: flex;
 	align-content: stretch;
+}
+
+.ThumbBloc__link {
+	text-decoration: none;
 }

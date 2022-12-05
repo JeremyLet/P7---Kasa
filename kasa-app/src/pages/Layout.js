@@ -5,15 +5,19 @@ import LogoHeader from "../components/LogoHeader.js";
 const Layout = () => {
 	return (
 		<>
-			<header>
+			<header className="LayoutHeader">
 				<LogoHeader />
-				<nav>
-					<ul>
+				<nav className="LayoutHeader__Nav">
+					<ul className="LayoutHeader__Nav--List">
 						<li>
-							<Link to="/">Accueil</Link>
+							<Link className="LayoutHeader__Nav--Links" to="/">
+								Accueil
+							</Link>
 						</li>
 						<li>
-							<Link to="/About">A propos</Link>
+							<Link className="LayoutHeader__Nav--Links" to="/About">
+								A propos
+							</Link>
 						</li>
 					</ul>
 				</nav>
