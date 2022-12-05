@@ -13,6 +13,7 @@
 	height: fit-content;
 	width: fit-content;
 	margin: 0;
+	margin-bottom: 66px;
 }
 
 .__BlocError404--Details {
@@ -23,6 +24,7 @@
 	height: fit-content;
 	width: fit-content;
 	margin: 0;
+	margin-bottom: 182px;
 }
 
 .__BlocError404--returnLanding {

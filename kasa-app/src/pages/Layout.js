@@ -1,12 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
 import "../assets/styles/Layout.css";
-import LogoHeader from "../components/LogoHeader.js";
+import LOGOH from "../assets/images/LOGOH.svg";
 
 const Layout = () => {
 	return (
 		<>
 			<header className="LayoutHeader">
-				<LogoHeader />
+				<img src={LOGOH} alt="LOGO" />
 				<nav className="LayoutHeader__Nav">
 					<ul className="LayoutHeader__Nav--List">
 						<li>

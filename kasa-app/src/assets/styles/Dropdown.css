@@ -1,4 +1,4 @@
-.InfoBar__topModule {
+.Dropdown__topModule {
 	width: 100%;
 	height: 47px;
 	background-color: #ff6060;
@@ -9,12 +9,12 @@
 	z-index: 1;
 }
 
-.InfoBar__topModule--vector {
+.Dropdown__topModule--vector {
 	margin: 16px;
 	cursor: pointer;
 }
 
-.InfoBar__topModule--text {
+.Dropdown__topModule--text {
 	color: #ffff;
 	font-family: "Montserrat";
 	font-size: 24px;
@@ -22,7 +22,7 @@
 	margin: 5px;
 }
 
-.InfoBar__lowModule {
+.Dropdown__lowModule {
 	width: 100%;
 	background-color: #f7f7f7;
 	display: flex;
@@ -34,7 +34,7 @@
 	z-index: -1;
 }
 
-.InfoBar__lowModule--text {
+.Dropdown__lowModule--text {
 	color: #ff6060;
 	font-family: "Montserrat";
 	font-size: 24px;
