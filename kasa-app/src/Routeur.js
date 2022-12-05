@@ -5,13 +5,13 @@ import FicheLogement from "./pages/FicheLogement";
 import About from "./pages/About";
 import Error404 from "./pages/Error404";
 
-export default function App() {
+function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />} />
-					<Route path="FicheLogement" element={<FicheLogement />} />
+					<Route path="/FicheLogement/:id" element={<FicheLogement />} />
 					<Route path="About" element={<About />} />
 					<Route path="*" element={<Error404 />} />
 				</Route>
@@ -19,3 +19,5 @@ export default function App() {
 		</BrowserRouter>
 	);
 }
+
+export default App;
