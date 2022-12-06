@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import "../assets/styles/FicheLogement.css";
+import TAG from "../components/Tag";
+import StarRate from "../components/StarRate";
 import Dropdown from "../components/Dropdown";
 import VectorDOWN from "../assets/images/VectorDOWN.svg";
 
@@ -8,6 +10,10 @@ let data = require("../back/logements.json");
 export default function FicheLogement() {
 	const params = useParams();
 	let result = data.find((e) => e.id === params.id);
+	let stars = [];
+	for (let i = 0; i < result.rating; i++) {
+		stars.push(i);
+	}
 	return (
 		<div className="Body">
 			<img src={result.cover} alt="VacationPlace" />
@@ -19,7 +25,14 @@ export default function FicheLogement() {
 				<p className="Host__name">{result.host.name}</p>
 				<img src={result.host.picture} alt="HostPicture" />
 			</div>
-			<div className="">{result.rating} Etoiles</div>
+
+			{stars.map((index) => {
+				return <StarRate key={index} />;
+			})}
+
+			{result.tags.map((tags) => {
+				return <TAG key={tags} name={tags} />;
+			})}
 			<Dropdown
 				title="Description"
 				details={result.description}
