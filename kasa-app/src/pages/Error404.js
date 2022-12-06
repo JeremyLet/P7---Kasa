@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../assets/styles/404.css";
+import Footer from "../components/Footer";
 
 const Error404 = () => {
 	return (
@@ -11,6 +12,7 @@ const Error404 = () => {
 			<Link className="__BlocError404--returnLanding" to="/">
 				Retourner sur la page d'accueil
 			</Link>
+			<Footer />
 		</div>
 	);
 };

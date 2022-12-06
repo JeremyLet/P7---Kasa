@@ -1,4 +1,5 @@
 import Section1 from "../components/Section1";
+import Footer from "../components/Footer";
 import Dropdown from "../components/Dropdown";
 import BannerAboutImage from "../assets/images/BannerAboutImage.png";
 import VectorDOWN from "../assets/images/VectorDOWN.svg";
@@ -27,6 +28,7 @@ const About = () => {
 				details="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
 				vector={VectorDOWN}
 			/>
+			<Footer />
 		</div>
 	);
 };

@@ -26,3 +26,7 @@
 	margin-left: 25px;
 	margin-left: 57px;
 }
+
+.LayoutHeader__Nav--Links:hover {
+	text-decoration: underline;
+}

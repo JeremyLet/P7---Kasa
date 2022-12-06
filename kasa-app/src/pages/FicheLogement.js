@@ -1,9 +1,12 @@
 import { useParams } from "react-router-dom";
 import "../assets/styles/FicheLogement.css";
 import TAG from "../components/Tag";
+import Footer from "../components/Footer";
 import StarRate from "../components/StarRate";
 import Dropdown from "../components/Dropdown";
 import VectorUP from "../assets/images/VectorUP.svg";
+import VectorG from "../assets/images/VectorG.svg";
+import VectorD from "../assets/images/VectorD.svg";
 
 let data = require("../back/logements.json");
 
@@ -17,11 +20,13 @@ export default function FicheLogement() {
 	return (
 		<div className="Body">
 			<div className="Carrousel">
+				<img src={VectorG} alt="vectorG" className="Carrousel--vectorG" />
 				<img
 					src={result.cover}
 					alt="VacationPlace"
 					className="Carrousel--image"
 				/>
+				<img src={VectorD} alt="vectorD" className="Carrousel--vectorD" />
 			</div>
 			<div className="TitleHostBloc">
 				<div className="Title">
@@ -54,13 +59,11 @@ export default function FicheLogement() {
 
 			<div className="dropdownBloc">
 				<Dropdown
-					className="dropdownBloc__dropdown"
 					title="Description"
 					details={result.description}
 					vector={VectorUP}
 				/>
 				<Dropdown
-					className="dropdownBloc__dropdown"
 					title="Equipements"
 					details={result.equipments.map((equipments) => {
 						return (
@@ -72,6 +75,7 @@ export default function FicheLogement() {
 					vector={VectorUP}
 				/>
 			</div>
+			<Footer />
 		</div>
 	);
 }
