@@ -16,33 +16,56 @@ export default function FicheLogement() {
 	}
 	return (
 		<div className="Body">
-			<img src={result.cover} alt="VacationPlace" />
-			<div className="Body__title">
-				<h1 className="Body__title--name">{result.title}</h1>
-				<h2 className="Body__title--location">{result.location}</h2>
+			<div className="Carrousel">
+				<img
+					src={result.cover}
+					alt="VacationPlace"
+					className="Carrousel--image"
+				/>
 			</div>
-			<div className="Host">
-				<p className="Host__name">{result.host.name}</p>
-				<img src={result.host.picture} alt="HostPicture" />
+			<div className="Content">
+				<div className="Title">
+					<h1 className="Title--name">{result.title}</h1>
+					<h2 className="Title--location">{result.location}</h2>
+				</div>
+				<div className="Host">
+					<p className="Host--name">{result.host.name}</p>
+					<img
+						src={result.host.picture}
+						alt="HostPicture"
+						className="Host--picture"
+					/>
+				</div>
+
+				<div className="Rate">
+					{stars.map((index) => {
+						return <StarRate key={index} />;
+					})}
+				</div>
+
+				<div className="Tags">
+					{result.tags.map((tags) => {
+						return <TAG key={tags} name={tags} />;
+					})}
+				</div>
+
+				<Dropdown
+					title="Description"
+					details={result.description}
+					vector={VectorDOWN}
+				/>
+				<Dropdown
+					title="Equipements"
+					details={result.equipments.map((equipments) => {
+						return (
+							<li className="Dropdown--equipments" key={equipments}>
+								{equipments}
+							</li>
+						);
+					})}
+					vector={VectorDOWN}
+				/>
 			</div>
-
-			{stars.map((index) => {
-				return <StarRate key={index} />;
-			})}
-
-			{result.tags.map((tags) => {
-				return <TAG key={tags} name={tags} />;
-			})}
-			<Dropdown
-				title="Description"
-				details={result.description}
-				vector={VectorDOWN}
-			/>
-			<Dropdown
-				title="Equipements"
-				details={result.equipments}
-				vector={VectorDOWN}
-			/>
 		</div>
 	);
 }

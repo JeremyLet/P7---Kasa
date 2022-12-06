@@ -1,17 +1,14 @@
-.TAG {
+.TAG__name {
 	background-color: #ff6060;
+	color: #ffff;
 	width: fit-content;
 	height: 25px;
 	border-radius: 10px;
-}
-.TAG__name {
-	height: 100%;
-	color: #ffff;
-	font-family: "Montserrat";
 	font-size: 14px;
 	font-weight: 500;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 2px 22px;
+	padding: 2px 22px;
+	margin-right: 10px;
 }

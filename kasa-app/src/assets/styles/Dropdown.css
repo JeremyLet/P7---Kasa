@@ -16,7 +16,6 @@
 
 .Dropdown__topModule--text {
 	color: #ffff;
-	font-family: "Montserrat";
 	font-size: 24px;
 	font-weight: 500;
 	margin: 5px;
@@ -36,7 +35,6 @@
 
 .Dropdown__lowModule--text {
 	color: #ff6060;
-	font-family: "Montserrat";
 	font-size: 24px;
 	font-weight: 400;
 	margin: 19px;
