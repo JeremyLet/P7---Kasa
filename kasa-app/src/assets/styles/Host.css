@@ -1,0 +1,17 @@
+.Host {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.Host--name {
+	color: #ff6060;
+	margin-right: 10px;
+	width: 93px;
+	text-align: right;
+}
+.Host--picture {
+	border-radius: 90px;
+	width: 64px;
+	height: 64px;
+}

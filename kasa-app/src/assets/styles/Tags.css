@@ -1,4 +1,4 @@
-.TAG__name {
+.Tags {
 	background-color: #ff6060;
 	color: #ffff;
 	width: fit-content;
@@ -7,7 +7,6 @@
 	font-size: 14px;
 	font-weight: 500;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	padding: 2px 22px;
 	margin-right: 10px;

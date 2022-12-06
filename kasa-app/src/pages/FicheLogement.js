@@ -1,12 +1,15 @@
 import { useParams } from "react-router-dom";
 import "../assets/styles/FicheLogement.css";
-import TAG from "../components/Tag";
+import VectorUP from "../assets/images/VectorUP.svg";
+
+// COMPOSANTS
+import Carrousel from "../components/Carrousel";
+import Title from "../components/Title";
+import Host from "../components/Host";
+import Tags from "../components/Tags";
 import Footer from "../components/Footer";
 import StarRate from "../components/StarRate";
 import Dropdown from "../components/Dropdown";
-import VectorUP from "../assets/images/VectorUP.svg";
-import VectorG from "../assets/images/VectorG.svg";
-import VectorD from "../assets/images/VectorD.svg";
 
 let data = require("../back/logements.json");
 
@@ -19,40 +22,22 @@ export default function FicheLogement() {
 	}
 	return (
 		<div className="Body">
-			<div className="Carrousel">
-				<img src={VectorG} alt="vectorG" className="Carrousel--vectorG" />
-				<img
-					src={result.cover}
-					alt="VacationPlace"
-					className="Carrousel--image"
-				/>
-				<img src={VectorD} alt="vectorD" className="Carrousel--vectorD" />
-			</div>
+			<Carrousel cover={result.cover} />
 			<div className="TitleHostBloc">
-				<div className="Title">
-					<h1 className="Title--name">{result.title}</h1>
-					<h2 className="Title--location">{result.location}</h2>
-				</div>
-				<div className="Host">
-					<p className="Host--name">{result.host.name}</p>
-					<img
-						src={result.host.picture}
-						alt="HostPicture"
-						className="Host--picture"
-					/>
-				</div>
+				<Title title={result.title} location={result.location} />
+				<Host hostName={result.host.name} hostPicture={result.host.picture} />
 			</div>
 
-			<div className="RateTagsBloc">
-				<div className="Rate">
-					{stars.map((index) => {
-						return <StarRate key={index} />;
+			<div className="BlocRateTags">
+				<div className="TagsBloc">
+					{result.tags.map((tags) => {
+						return <Tags key={tags} tags={tags} />;
 					})}
 				</div>
 
-				<div className="Tags">
-					{result.tags.map((tags) => {
-						return <TAG key={tags} name={tags} />;
+				<div className="Rate">
+					{stars.map((index) => {
+						return <StarRate key={index} />;
 					})}
 				</div>
 			</div>

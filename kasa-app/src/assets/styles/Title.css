@@ -1,0 +1,17 @@
+.Title {
+	width: fit-content;
+}
+
+.Title--name {
+	color: #ff6060;
+	font-size: 36px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.Title--location {
+	color: #ff6060;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+}
