@@ -24,30 +24,57 @@
 	margin: 0;
 }
 
+.Tags {
+	display: flex;
+}
+
+.Rate {
+	display: flex;
+	justify-content: flex-end;
+}
+
 .Host {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-.Tags {
-	display: flex;
-}
-
-.Rate {
-	margin-top: 25px;
-	display: flex;
-	justify-content: flex-end;
-}
-
 .Host--name {
 	color: #ff6060;
 	margin-right: 10px;
+	width: 93px;
+	text-align: right;
 }
 .Host--picture {
 	border-radius: 90px;
+	width: 64px;
+	height: 64px;
+}
+
+.dropdownBloc {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.Dropdown {
+	width: 582px;
 }
 
 .Dropdown--equipments {
 	list-style-type: none;
+	margin-bottom: 5px;
+}
+
+.TitleHostBloc {
+	display: flex;
+	justify-content: space-between;
+}
+
+.RateTagsBloc {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
 }

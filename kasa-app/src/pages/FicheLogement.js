@@ -3,7 +3,7 @@ import "../assets/styles/FicheLogement.css";
 import TAG from "../components/Tag";
 import StarRate from "../components/StarRate";
 import Dropdown from "../components/Dropdown";
-import VectorDOWN from "../assets/images/VectorDOWN.svg";
+import VectorUP from "../assets/images/VectorUP.svg";
 
 let data = require("../back/logements.json");
 
@@ -23,7 +23,7 @@ export default function FicheLogement() {
 					className="Carrousel--image"
 				/>
 			</div>
-			<div className="Content">
+			<div className="TitleHostBloc">
 				<div className="Title">
 					<h1 className="Title--name">{result.title}</h1>
 					<h2 className="Title--location">{result.location}</h2>
@@ -36,7 +36,9 @@ export default function FicheLogement() {
 						className="Host--picture"
 					/>
 				</div>
+			</div>
 
+			<div className="RateTagsBloc">
 				<div className="Rate">
 					{stars.map((index) => {
 						return <StarRate key={index} />;
@@ -48,13 +50,17 @@ export default function FicheLogement() {
 						return <TAG key={tags} name={tags} />;
 					})}
 				</div>
+			</div>
 
+			<div className="dropdownBloc">
 				<Dropdown
+					className="dropdownBloc__dropdown"
 					title="Description"
 					details={result.description}
-					vector={VectorDOWN}
+					vector={VectorUP}
 				/>
 				<Dropdown
+					className="dropdownBloc__dropdown"
 					title="Equipements"
 					details={result.equipments.map((equipments) => {
 						return (
@@ -63,7 +69,7 @@ export default function FicheLogement() {
 							</li>
 						);
 					})}
-					vector={VectorDOWN}
+					vector={VectorUP}
 				/>
 			</div>
 		</div>
