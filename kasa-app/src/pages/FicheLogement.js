@@ -1,13 +1,35 @@
 import { useParams } from "react-router-dom";
 import "../assets/styles/FicheLogement.css";
+import Dropdown from "../components/Dropdown";
+import VectorDOWN from "../assets/images/VectorDOWN.svg";
 
-const FicheLogement = () => {
+let data = require("../back/logements.json");
+
+export default function FicheLogement() {
 	const params = useParams();
+	let result = data.find((e) => e.id === params.id);
 	return (
-		<h1 className="Logement">
-			Fiche Logement n° <span>{params.id} </span>
-		</h1>
+		<div className="Body">
+			<img src={result.cover} alt="VacationPlace" />
+			<div className="Body__title">
+				<h1 className="Body__title--name">{result.title}</h1>
+				<h2 className="Body__title--location">{result.location}</h2>
+			</div>
+			<div className="Host">
+				<p className="Host__name">{result.host.name}</p>
+				<img src={result.host.picture} alt="HostPicture" />
+			</div>
+			<div className="">{result.rating} Etoiles</div>
+			<Dropdown
+				title="Description"
+				details={result.description}
+				vector={VectorDOWN}
+			/>
+			<Dropdown
+				title="Equipements"
+				details={result.equipments}
+				vector={VectorDOWN}
+			/>
+		</div>
 	);
-};
-
-export default FicheLogement;
+}
