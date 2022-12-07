@@ -8,7 +8,7 @@ import Title from "../components/Title";
 import Host from "../components/Host";
 import Tags from "../components/Tags";
 import Footer from "../components/Footer";
-import Star from "../components/StarRate";
+import Star from "../components/Rate";
 import Dropdown from "../components/Dropdown";
 
 let data = require("../back/logements.json");
