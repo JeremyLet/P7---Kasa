@@ -6,7 +6,9 @@ export default function Footer() {
 		<footer className="FooterBloc">
 			<div className="FooterDetails">
 				<img src={LOGOF} alt="LOGO" />
-				<p className="FooterDetails__text">© 2020 KASA All rights reserved</p>
+				<p className="FooterDetails__text">
+					<span>&#169;</span> 2020 KASA All rights reserved
+				</p>
 			</div>
 		</footer>
 	);

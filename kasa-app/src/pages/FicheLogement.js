@@ -16,9 +16,9 @@ let data = require("../back/logements.json");
 export default function FicheLogement() {
 	const params = useParams();
 	let result = data.find((e) => e.id === params.id);
-	let stars = [];
+	let RedStars = [];
 	for (let i = 0; i < result.rating; i++) {
-		stars.push(i);
+		RedStars.push(i);
 	}
 	return (
 		<div className="Body">
@@ -35,11 +35,12 @@ export default function FicheLogement() {
 					})}
 				</div>
 
-				<div className="Rate">
-					{stars.map((index) => {
+				<StarRate />
+				{/* <div className="Rate">
+					{RedStars.map((index) => {
 						return <StarRate key={index} />;
 					})}
-				</div>
+				</div> */}
 			</div>
 
 			<div className="dropdownBloc">
