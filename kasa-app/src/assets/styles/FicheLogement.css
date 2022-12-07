@@ -44,3 +44,8 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+.Star {
+	color: #e3e3e3;
+	font-size: 30px;
+}

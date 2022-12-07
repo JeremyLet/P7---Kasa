@@ -8,7 +8,7 @@ import Title from "../components/Title";
 import Host from "../components/Host";
 import Tags from "../components/Tags";
 import Footer from "../components/Footer";
-import StarRate from "../components/StarRate";
+import Star from "../components/StarRate";
 import Dropdown from "../components/Dropdown";
 
 let data = require("../back/logements.json");
@@ -16,10 +16,6 @@ let data = require("../back/logements.json");
 export default function FicheLogement() {
 	const params = useParams();
 	let result = data.find((e) => e.id === params.id);
-	let RedStars = [];
-	for (let i = 0; i < result.rating; i++) {
-		RedStars.push(i);
-	}
 	return (
 		<div className="Body">
 			<Carrousel cover={result.cover} />
@@ -35,12 +31,11 @@ export default function FicheLogement() {
 					})}
 				</div>
 
-				<StarRate />
-				{/* <div className="Rate">
-					{RedStars.map((index) => {
-						return <StarRate key={index} />;
+				<div className="Rate">
+					{[...Array(parseInt(5))].map((star, index) => {
+						return <Star key={index} />;
 					})}
-				</div> */}
+				</div>
 			</div>
 
 			<div className="dropdownBloc">
