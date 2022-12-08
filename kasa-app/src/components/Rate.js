@@ -5,8 +5,6 @@ export default function StarScale(props) {
 
 	const range = [1, 2, 3, 4, 5];
 
-	console.log(starValue);
-
 	return (
 		<div>
 			{range.map((rangeElem) =>

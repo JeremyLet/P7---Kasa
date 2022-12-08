@@ -9,7 +9,12 @@ export default function Gallery() {
 			<div className="Gallery">
 				{dataQuery.map((id, title) => {
 					return (
-						<Thumb key={id.id} id={id.id} location={id.location}>
+						<Thumb
+							key={id.id}
+							id={id.id}
+							location={id.location}
+							cover={id.cover}
+						>
 							{id.title}
 						</Thumb>
 					);
