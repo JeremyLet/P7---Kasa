@@ -6,40 +6,35 @@ import React from "react";
 class Carrousel extends React.Component {
 	constructor(props) {
 		super(props);
-		console.log(props.pictures.length);
-		this.state = { value: 0 };
-		console.log(this.state.value);
+		// console.log(props.pictures.length);
+		this.state = {
+			value: 0,
+			min: -3,
+			max: props.pictures.length - 1,
+		};
 	}
 
-	/* 
-	MEMO : 
-	- La fonction picPlus tourne. A implémenter dans le render en bas (changer le state)
-	- Remplacer "5" par "props.pictures.length"
-	- La fonction picMoins ne marche pas (copier la picPlus dans picMoins à la fin)
-	*/
-
-	picPlus(props) {
-		console.log(this.state.value);
-		if (this.state.value < 5) {
-			console.log("Ok");
+	pictureNext() {
+		if (this.state.value < this.state.max) {
 			this.setState((state) => ({ value: state.value + 1 }));
 		} else {
-			console.log("nope");
+			this.setState(() => ({ value: 0 }));
 		}
 	}
 
-	picMoins() {
-		this.setState((state, props) => ({
-			value: state.value--,
-		}));
+	picturePrevious() {
+		if (this.state.value > this.state.min) {
+			this.setState((state) => ({ value: state.value - 1 }));
+		} else {
+			this.setState(() => ({ value: 0 }));
+		}
 	}
 
 	render() {
 		return (
 			<div className="Carrousel">
-				<p>Photo de rang : {this.state.initialValue}</p>
 				<button
-					onClick={this.picMoins.bind(this)}
+					onClick={this.picturePrevious.bind(this)}
 					className="Carrousel--vectorG"
 				>
 					<img src={VectorG} alt="vectorG" />
@@ -50,7 +45,7 @@ class Carrousel extends React.Component {
 					className="Carrousel--image"
 				/>
 				<button
-					onClick={this.picPlus.bind(this)}
+					onClick={this.pictureNext.bind(this)}
 					className="Carrousel--vectorD"
 				>
 					<img src={VectorD} alt="vectorD" />
