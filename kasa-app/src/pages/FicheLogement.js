@@ -18,7 +18,7 @@ export default function FicheLogement() {
 	let result = data.find((e) => e.id === params.id);
 	return (
 		<div className="Body">
-			<Carrousel picture={result.pictures[0]} />
+			<Carrousel cover={result.pictures[0]} pictures={result.pictures} />
 			<div className="TitleHostBloc">
 				<Title title={result.title} location={result.location} />
 				<Host hostName={result.host.name} hostPicture={result.host.picture} />
