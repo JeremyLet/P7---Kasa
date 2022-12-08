@@ -9,19 +9,18 @@ function handleChange(e) {
 export default function Carrousel(props) {
 	return (
 		<div className="Carrousel">
+			<button onClick={handleChange} className="Carrousel--vectorG">
+				<img src={VectorG} alt="vectorG" />
+			</button>
 			<img
-				src={VectorG}
-				alt="vectorG"
-				className="Carrousel--vectorG"
-				onClick={handleChange}
+				src={props.picture}
+				alt="VacationPlace"
+				className="Carrousel--image"
 			/>
-			<img src={props.cover} alt="VacationPlace" className="Carrousel--image" />
-			<img
-				src={VectorD}
-				alt="vectorD"
-				className="Carrousel--vectorD"
-				onClick={handleChange}
-			/>
+
+			<button onClick={handleChange} className="Carrousel--vectorD">
+				<img src={VectorD} alt="vectorD" />
+			</button>
 		</div>
 	);
 }
