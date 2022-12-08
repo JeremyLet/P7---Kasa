@@ -1,27 +1,31 @@
 import "../assets/styles/Rate.css";
-// import { useState } from "react";
 
-/* Composant STAR */
+export default function StarScale(props) {
+	const starValue = props.starValue;
 
-function Star() {
-	return <span className="Star">&#9733;</span>;
+	const range = [1, 2, 3, 4, 5];
+
+	console.log(starValue);
+
+	return (
+		<div>
+			{range.map((rangeElem) =>
+				starValue >= rangeElem ? (
+					<span
+						key={rangeElem.toString()}
+						style={{ color: "#ff6060", fontSize: "30px" }}
+					>
+						&#9733;
+					</span>
+				) : (
+					<span
+						key={rangeElem.toString()}
+						style={{ color: "#e3e3e3", fontSize: "30px" }}
+					>
+						&#9733;
+					</span>
+				)
+			)}
+		</div>
+	);
 }
-
-/* Function / Composant pour ramener la star de la bonne couleur */
-
-// const StarRate = () => {
-// 	const [rating, setRating] = useState(0);
-// 	console.log(rating);
-// 	return (
-// 		<div className="star-rating">
-// 			{[...Array(5)].map((star, index) => {
-// 				return (
-// 					<span key={index} className="ZeroStar">
-// 						{rating}
-// 					</span>
-// 				);
-// 			})}
-// 		</div>
-// 	);
-// };
-export default Star;

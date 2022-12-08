@@ -8,7 +8,7 @@ import Title from "../components/Title";
 import Host from "../components/Host";
 import Tags from "../components/Tags";
 import Footer from "../components/Footer";
-import Star from "../components/Rate";
+import StarScale from "../components/Rate";
 import Dropdown from "../components/Dropdown";
 
 let data = require("../back/logements.json");
@@ -31,11 +31,7 @@ export default function FicheLogement() {
 					})}
 				</div>
 
-				<div className="Rate">
-					{[...Array(parseInt(5))].map((star, index) => {
-						return <Star key={index} />;
-					})}
-				</div>
+				<StarScale starValue={result.rating} />
 			</div>
 
 			<div className="dropdownBloc">
