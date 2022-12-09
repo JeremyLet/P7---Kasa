@@ -1,11 +1,11 @@
 .LayoutHeader {
-	width: 100%;
+	width: 1240px;
 	height: 68px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 63px;
+	margin: 40px 100px;
 }
 
 .LayoutHeader__Nav {

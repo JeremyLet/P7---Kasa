@@ -11,7 +11,10 @@ const About = () => {
 			<Section1 image={BannerAboutImage} />
 			{[...Array(4)].map((index, nom) => {
 				return (
-					<div className="Dropdown-About" style={{ marginLeft: "50px" }}>
+					<div
+						className="Dropdown-About"
+						style={{ width: "1240px", marginLeft: "20px" }}
+					>
 						<Dropdown
 							key={nom}
 							title={Commercials[nom].nom}
