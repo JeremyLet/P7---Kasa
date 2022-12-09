@@ -11,12 +11,14 @@ const About = () => {
 			<Section1 image={BannerAboutImage} />
 			{[...Array(4)].map((index, nom) => {
 				return (
-					<Dropdown
-						key={nom}
-						title={Commercials[nom].nom}
-						details={Commercials[nom].details}
-						vector={VectorDOWN}
-					/>
+					<div className="Dropdown-About" style={{ marginLeft: "50px" }}>
+						<Dropdown
+							key={nom}
+							title={Commercials[nom].nom}
+							details={Commercials[nom].details}
+							vector={VectorDOWN}
+						/>
+					</div>
 				);
 			})}
 			<Footer />

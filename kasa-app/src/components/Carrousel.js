@@ -6,7 +6,6 @@ import React from "react";
 class Carrousel extends React.Component {
 	constructor(props) {
 		super(props);
-		// console.log(props.pictures.length);
 		this.state = {
 			value: 0,
 			min: -3,
