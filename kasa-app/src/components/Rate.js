@@ -1,4 +1,4 @@
-import "../assets/styles/Rate.css";
+import "../assets/styles/componentsStyles/Rate.css";
 
 export default function StarScale(props) {
 	const starValue = props.starValue;

@@ -1,9 +1,8 @@
 .Gallery {
-	margin: 0px 100px;
 	height: 100%;
 	border-radius: 25px;
 	background-color: rgba(246, 246, 246, 1);
-	padding: 26px 0px 26px 0px;
+	/* padding: 26px 0px 26px 0px; */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;

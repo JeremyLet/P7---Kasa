@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import "../assets/styles/Layout.css";
+import "../assets/styles/componentsStyles/Layout.css";
 import LOGOH from "../assets/images/LOGOH.svg";
 
 const Layout = () => {

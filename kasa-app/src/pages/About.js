@@ -1,8 +1,8 @@
-import "../assets/styles/About.css";
+import "../assets/styles/pagesStyles/About.css";
 import Section1 from "../components/Section1";
 import Footer from "../components/Footer";
 import Dropdown from "../components/Dropdown";
-import Commercials from "../components/CTA";
+import Commercials from "../back & data/CTA";
 import BannerAboutImage from "../assets/images/BannerAboutImage.png";
 import VectorDOWN from "../assets/images/VectorDOWN.svg";
 

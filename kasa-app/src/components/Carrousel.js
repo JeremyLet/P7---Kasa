@@ -1,6 +1,6 @@
 import VectorG from "../assets/images/VectorG.svg";
 import VectorD from "../assets/images/VectorD.svg";
-import "../assets/styles/Carrousel.css";
+import "../assets/styles/componentsStyles/Carrousel.css";
 import React from "react";
 
 class Carrousel extends React.Component {

@@ -1,7 +1,7 @@
-import "../assets/styles/Gallery.css";
+import "../assets/styles/componentsStyles/Gallery.css";
 import Thumb from "../components/Thumb";
 
-let dataQuery = require("../back/logements.json");
+let dataQuery = require("../back & data/logements.json");
 
 export default function Gallery() {
 	return (

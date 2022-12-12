@@ -1,4 +1,4 @@
-import "../assets/styles/Section1.css";
+import "../assets/styles/componentsStyles/Section1.css";
 
 export default function Section1(props) {
 	return (

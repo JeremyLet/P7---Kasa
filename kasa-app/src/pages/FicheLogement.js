@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import "../assets/styles/FicheLogement.css";
+import "../assets/styles/pagesStyles/FicheLogement.css";
 import VectorUP from "../assets/images/VectorUP.svg";
 
 // COMPOSANTS
@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 import StarScale from "../components/Rate";
 import Dropdown from "../components/Dropdown";
 
-let data = require("../back/logements.json");
+let data = require("../back & data/logements.json");
 
 export default function FicheLogement() {
 	const params = useParams();

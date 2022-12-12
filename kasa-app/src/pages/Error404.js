@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../assets/styles/404.css";
+import "../assets/styles/pagesStyles/404.css";
 import Footer from "../components/Footer";
 
 const Error404 = () => {

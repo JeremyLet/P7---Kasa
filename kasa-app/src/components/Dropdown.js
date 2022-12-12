@@ -1,4 +1,4 @@
-import "../assets/styles/Dropdown.css";
+import "../assets/styles/componentsStyles/Dropdown.css";
 import VectorUP from "../assets/images/VectorUP.svg";
 import VectorDOWN from "../assets/images/VectorDOWN.svg";
 import { useState } from "react";

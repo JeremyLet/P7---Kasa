@@ -1,4 +1,4 @@
-import "../assets/styles/Thumb.css";
+import "../assets/styles/componentsStyles/Thumb.css";
 import { Link } from "react-router-dom";
 
 export default function Thumb(props) {

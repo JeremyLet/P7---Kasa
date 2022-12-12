@@ -1,4 +1,4 @@
-import "../assets/styles/Footer.css";
+import "../assets/styles/componentsStyles/Footer.css";
 import LOGOF from "../assets/images/LOGOF.svg";
 
 export default function Footer() {
