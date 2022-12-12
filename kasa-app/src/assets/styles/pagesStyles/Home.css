@@ -1,3 +1,9 @@
 .Home {
 	padding: 40px 100px;
 }
+
+@media all and (max-width: 375px) {
+	.Home {
+		padding: 20px;
+	}
+}

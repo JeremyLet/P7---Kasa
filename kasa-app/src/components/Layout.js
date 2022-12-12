@@ -6,7 +6,7 @@ const Layout = () => {
 	return (
 		<>
 			<header className="LayoutHeader">
-				<img src={LOGOH} alt="LOGO" />
+				<img src={LOGOH} alt="LOGO" className="LOGO" />
 				<nav className="LayoutHeader__Nav">
 					<ul className="LayoutHeader__Nav--List">
 						<li>

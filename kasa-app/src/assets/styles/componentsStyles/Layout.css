@@ -7,10 +7,6 @@
 	align-items: center;
 }
 
-.LayoutHeader__Nav {
-	height: 50%;
-}
-
 .LayoutHeader__Nav--List {
 	display: flex;
 	flex-direction: row;
@@ -22,10 +18,26 @@
 .LayoutHeader__Nav--Links {
 	color: rgba(255, 96, 96, 1);
 	text-decoration: none;
-	margin-left: 25px;
 	margin-left: 57px;
 }
 
 .LayoutHeader__Nav--Links:hover {
 	text-decoration: underline;
+}
+
+@media all and (max-width: 375px) {
+	.LayoutHeader {
+		padding: 0px 20px;
+	}
+
+	.LOGO {
+		width: 145px;
+		height: 47px;
+	}
+	.LayoutHeader__Nav--List {
+		font-size: 12px;
+	}
+	.LayoutHeader__Nav--Links {
+		margin-left: 10px;
+	}
 }

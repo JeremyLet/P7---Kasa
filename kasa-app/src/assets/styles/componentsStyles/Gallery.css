@@ -10,3 +10,16 @@
 	align-content: center;
 	flex-wrap: wrap;
 }
+
+@media all and (max-width: 992px) {
+	.Gallery {
+		width: 95%;
+	}
+}
+
+@media all and (max-width: 375px) {
+	.Gallery {
+		padding: 0px 0px;
+		background-color: #fff;
+	}
+}
