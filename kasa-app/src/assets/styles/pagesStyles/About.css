@@ -2,6 +2,10 @@
 	padding: 0px 100px;
 }
 
+.Dropdown-About .wrapper {
+	margin: auto;
+}
+
 .Dropdown-About .content-show {
 	height: 150px;
 	display: flex;
