@@ -20,21 +20,24 @@ export default function FicheLogement() {
 		<>
 			<div className="Body">
 				<Carrousel cover={result.pictures[0]} pictures={result.pictures} />
-				<div className="TitleHostBloc">
-					<Title title={result.title} location={result.location} />
-					<Host hostName={result.host.name} hostPicture={result.host.picture} />
-				</div>
+				<div className="BodyBloc">
+					<div className="BodyBloc__details">
+						<Title title={result.title} location={result.location} />
 
-				<div className="BlocRateTags">
-					<div className="TagsBloc">
-						{result.tags.map((tags) => {
-							return <Tags key={tags} tags={tags} />;
-						})}
+						<div className="TagsBloc">
+							{result.tags.map((tags) => {
+								return <Tags key={tags} tags={tags} />;
+							})}
+						</div>
 					</div>
-
-					<StarScale starValue={result.rating} />
+					<div className="RateHostBloc">
+						<Host
+							hostName={result.host.name}
+							hostPicture={result.host.picture}
+						/>
+						<StarScale starValue={result.rating} />
+					</div>
 				</div>
-
 				<div className="dropdownBloc">
 					<Dropdown
 						title="Description"

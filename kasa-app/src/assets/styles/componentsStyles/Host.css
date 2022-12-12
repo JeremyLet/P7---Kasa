@@ -6,6 +6,8 @@
 
 .Host--name {
 	color: #ff6060;
+	font-size: 18px;
+	font-weight: 500;
 	margin-right: 10px;
 	width: 93px;
 	text-align: right;

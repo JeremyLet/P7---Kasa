@@ -11,14 +11,14 @@ export default function StarScale(props) {
 				starValue >= rangeElem ? (
 					<span
 						key={rangeElem.toString()}
-						style={{ color: "#ff6060", fontSize: "30px" }}
+						style={{ color: "#ff6060", fontSize: "30px", marginLeft: "10px" }}
 					>
 						&#9733;
 					</span>
 				) : (
 					<span
 						key={rangeElem.toString()}
-						style={{ color: "#e3e3e3", fontSize: "30px" }}
+						style={{ color: "#e3e3e3", fontSize: "30px", marginLeft: "10px" }}
 					>
 						&#9733;
 					</span>
