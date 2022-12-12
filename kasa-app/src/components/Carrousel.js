@@ -32,23 +32,26 @@ class Carrousel extends React.Component {
 	render() {
 		return (
 			<div className="Carrousel">
-				<button
-					onClick={this.picturePrevious.bind(this)}
-					className="Carrousel--vectorG"
-				>
-					<img src={VectorG} alt="vectorG" />
-				</button>
 				<img
 					src={this.props.pictures.at(this.state.value)}
 					alt="VacationPlace"
 					className="Carrousel--image"
 				/>
-				<button
-					onClick={this.pictureNext.bind(this)}
-					className="Carrousel--vectorD"
-				>
-					<img src={VectorD} alt="vectorD" />
-				</button>
+				<div className="Carrousel__buttons">
+					<button
+						onClick={this.picturePrevious.bind(this)}
+						className="Carrousel--vectorG"
+					>
+						<img src={VectorG} alt="vectorG" />
+					</button>
+
+					<button
+						onClick={this.pictureNext.bind(this)}
+						className="Carrousel--vectorD"
+					>
+						<img src={VectorD} alt="vectorD" />
+					</button>
+				</div>
 			</div>
 		);
 	}

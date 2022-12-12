@@ -17,42 +17,44 @@ export default function FicheLogement() {
 	const params = useParams();
 	let result = data.find((e) => e.id === params.id);
 	return (
-		<div className="Body">
-			<Carrousel cover={result.pictures[0]} pictures={result.pictures} />
-			<div className="TitleHostBloc">
-				<Title title={result.title} location={result.location} />
-				<Host hostName={result.host.name} hostPicture={result.host.picture} />
-			</div>
-
-			<div className="BlocRateTags">
-				<div className="TagsBloc">
-					{result.tags.map((tags) => {
-						return <Tags key={tags} tags={tags} />;
-					})}
+		<>
+			<div className="Body">
+				<Carrousel cover={result.pictures[0]} pictures={result.pictures} />
+				<div className="TitleHostBloc">
+					<Title title={result.title} location={result.location} />
+					<Host hostName={result.host.name} hostPicture={result.host.picture} />
 				</div>
 
-				<StarScale starValue={result.rating} />
-			</div>
+				<div className="BlocRateTags">
+					<div className="TagsBloc">
+						{result.tags.map((tags) => {
+							return <Tags key={tags} tags={tags} />;
+						})}
+					</div>
 
-			<div className="dropdownBloc">
-				<Dropdown
-					title="Description"
-					details={result.description}
-					vector={VectorUP}
-				/>
-				<Dropdown
-					title="Equipements"
-					details={result.equipments.map((equipments) => {
-						return (
-							<li className="Dropdown--equipments" key={equipments}>
-								{equipments}
-							</li>
-						);
-					})}
-					vector={VectorUP}
-				/>
+					<StarScale starValue={result.rating} />
+				</div>
+
+				<div className="dropdownBloc">
+					<Dropdown
+						title="Description"
+						details={result.description}
+						vector={VectorUP}
+					/>
+					<Dropdown
+						title="Equipements"
+						details={result.equipments.map((equipments) => {
+							return (
+								<li className="Dropdown--equipments" key={equipments}>
+									{equipments}
+								</li>
+							);
+						})}
+						vector={VectorUP}
+					/>
+				</div>
 			</div>
 			<Footer />
-		</div>
+		</>
 	);
 }

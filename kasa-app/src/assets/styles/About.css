@@ -1,0 +1,10 @@
+.AboutBloc {
+	padding: 0px 100px;
+}
+
+.Dropdown-About .content-show {
+	height: 150px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}

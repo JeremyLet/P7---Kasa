@@ -1,5 +1,5 @@
 .Body {
-	width: 1240px;
+	margin: 0px 100px;
 }
 
 .TitleHostBloc {
@@ -27,7 +27,15 @@
 }
 
 .dropdownBloc .wrapper {
-	width: 582px;
+	width: 45%;
+}
+
+.dropdownBloc .content-show {
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .Dropdown--equipments {
