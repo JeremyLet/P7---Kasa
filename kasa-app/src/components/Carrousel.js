@@ -8,7 +8,7 @@ class Carrousel extends React.Component {
 		super(props);
 		this.state = {
 			value: 0,
-			min: -3,
+			min: -props.pictures.length + 1,
 			max: props.pictures.length - 1,
 		};
 	}

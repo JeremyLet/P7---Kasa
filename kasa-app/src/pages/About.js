@@ -12,6 +12,7 @@ const About = () => {
 			{[...Array(4)].map((index, nom) => {
 				return (
 					<div
+						key={nom}
 						className="Dropdown-About"
 						style={{ width: "1240px", marginLeft: "20px" }}
 					>
