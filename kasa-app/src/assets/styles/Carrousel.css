@@ -3,6 +3,14 @@
 	margin-bottom: 30px;
 }
 
+.Carrousel__status {
+	color: #fff;
+	margin: 0;
+	position: relative;
+	bottom: 50px;
+	text-align: center;
+}
+
 .Carrousel__buttons {
 	padding: 0px 23.36px;
 	display: flex;

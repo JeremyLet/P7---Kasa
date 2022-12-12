@@ -7,25 +7,35 @@ class Carrousel extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			value: 0,
-			min: -props.pictures.length + 1,
-			max: props.pictures.length - 1,
+			index: 0 /* Index du tableau */,
+			min: 0 /* val la plus basse */,
+			max: props.pictures.length - 1 /* nbre de pics de l'array */,
+			compteurValue: 1,
 		};
 	}
 
 	pictureNext() {
-		if (this.state.value < this.state.max) {
-			this.setState((state) => ({ value: state.value + 1 }));
+		if (this.state.index < this.state.max) {
+			this.setState((state) => ({
+				index: state.index + 1,
+				compteurValue: state.compteurValue + 1,
+			}));
 		} else {
-			this.setState(() => ({ value: 0 }));
+			this.setState(() => ({ index: 0, compteurValue: 1 }));
 		}
 	}
 
 	picturePrevious() {
-		if (this.state.value > this.state.min) {
-			this.setState((state) => ({ value: state.value - 1 }));
+		if (this.state.index > this.state.min) {
+			this.setState((state) => ({
+				index: state.index - 1,
+				compteurValue: state.compteurValue - 1,
+			}));
 		} else {
-			this.setState(() => ({ value: 0 }));
+			this.setState((state) => ({
+				index: (state.index = this.props.pictures.length - 1),
+				compteurValue: (state.compteurValue = this.props.pictures.length),
+			}));
 		}
 	}
 
@@ -33,10 +43,13 @@ class Carrousel extends React.Component {
 		return (
 			<div className="Carrousel">
 				<img
-					src={this.props.pictures.at(this.state.value)}
+					src={this.props.pictures.at(this.state.index)}
 					alt="VacationPlace"
 					className="Carrousel--image"
 				/>
+				<p className="Carrousel__status">
+					{this.state.compteurValue}/{this.props.pictures.length}
+				</p>
 				<div className="Carrousel__buttons">
 					<button
 						onClick={this.picturePrevious.bind(this)}
