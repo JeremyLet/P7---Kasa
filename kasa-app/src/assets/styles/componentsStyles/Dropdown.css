@@ -48,3 +48,26 @@
 	color: #ff6060;
 	padding: 27px;
 }
+
+@media all and (max-width: 375px) {
+	.wrapper {
+		width: 335px;
+	}
+	.item {
+		margin-bottom: 20px;
+	}
+	.item__title--text {
+		font-size: 13px;
+	}
+	.content-show {
+		font-size: 12px;
+	}
+	.vectorUp {
+		width: 8.98px;
+		height: 15.2px;
+	}
+	.vectorDown {
+		width: 8.98px;
+		height: 15.2px;
+	}
+}

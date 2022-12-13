@@ -2,6 +2,11 @@
 	padding: 0px 100px;
 }
 
+.resultSection__illustration {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 .Dropdown-About .wrapper {
 	margin: auto;
 }
@@ -11,4 +16,14 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+@media all and (max-width: 375px) {
+	.AboutBloc {
+		padding: 20px;
+	}
+	.AboutBloc .resultSection {
+		height: 223px;
+		margin-bottom: 19px;
+	}
 }

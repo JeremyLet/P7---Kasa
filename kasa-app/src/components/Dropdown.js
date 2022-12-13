@@ -21,9 +21,9 @@ export default function Dropdown(props) {
 						<h2 className="item__title--text">{props.title}</h2>
 						<span className="item__title--vector">
 							{selected === "OK" ? (
-								<img src={VectorUP} alt="vectorUp" />
+								<img src={VectorUP} alt="vectorUp" className="vectorUp" />
 							) : (
-								<img src={VectorDOWN} alt="vectorDown" />
+								<img src={VectorDOWN} alt="vectorDown" className="vectorDown" />
 							)}
 						</span>
 					</div>
