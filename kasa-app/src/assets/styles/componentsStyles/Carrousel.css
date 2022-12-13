@@ -46,12 +46,14 @@
 @media all and (max-width: 375px) {
 	.Carrousel {
 		height: 255px;
-		bottom: 19.8px;
 		margin-bottom: 15px;
 	}
 	.Carrousel__buttons {
 		padding: 0px;
-		top: 145.1px;
+		bottom: 142px;
+	}
+	.Carrousel__status {
+		bottom: 45px;
 	}
 	.Carrousel--vectorG {
 		left: 5.84px;
