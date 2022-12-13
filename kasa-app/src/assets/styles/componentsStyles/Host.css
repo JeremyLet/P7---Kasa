@@ -9,11 +9,22 @@
 	font-size: 18px;
 	font-weight: 500;
 	margin-right: 10px;
-	width: 93px;
+	width: min-content;
 	text-align: right;
 }
 .Host--picture {
 	border-radius: 90px;
 	width: 64px;
 	height: 64px;
+}
+
+@media all and (max-width: 375px) {
+	.Host--name {
+		width: min-content;
+		font-size: 12px;
+	}
+	.Host--picture {
+		width: 32px;
+		height: 32px;
+	}
 }

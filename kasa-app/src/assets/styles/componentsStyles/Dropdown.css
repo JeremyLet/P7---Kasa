@@ -1,12 +1,12 @@
-.wrapper {
+.dropdown {
 	width: 82.5%;
 }
 
-.accordeon {
+.dropdown__accordeon {
 	width: 100%;
 }
 
-.item {
+.dropdown__item {
 	background: #ff6060;
 	border-radius: 5px;
 	margin-bottom: 50px;
@@ -37,7 +37,7 @@
 }
 .content .show {
 	height: auto;
-	max-height: 9999;
+	max-height: 146;
 	transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
@@ -50,17 +50,23 @@
 }
 
 @media all and (max-width: 375px) {
-	.wrapper {
+	.dropdown {
 		width: 335px;
 	}
-	.item {
+	.dropdown__item {
 		margin-bottom: 20px;
 	}
 	.item__title--text {
 		font-size: 13px;
 	}
+	.content .show {
+		max-height: 143px;
+	}
+
 	.content-show {
+		height: fit-content;
 		font-size: 12px;
+		padding: 17px 6.91px 6.91px 11.51px;
 	}
 	.vectorUp {
 		width: 8.98px;

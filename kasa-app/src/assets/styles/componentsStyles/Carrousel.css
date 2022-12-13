@@ -1,6 +1,8 @@
 .Carrousel {
 	height: 415px;
 	margin-bottom: 30px;
+	position: relative;
+	bottom: 85px;
 }
 
 .Carrousel__status {
@@ -12,17 +14,16 @@
 }
 
 .Carrousel__buttons {
-	padding: 0px 23.36px;
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	bottom: 265px;
+	top: 284.7px;
 }
 
 .Carrousel--image {
 	border-radius: 25px;
 	width: 100%;
-	height: 415px;
+	height: 100%;
 	object-fit: cover;
 	z-index: -1;
 }
@@ -30,6 +31,7 @@
 .Carrousel--vectorG {
 	z-index: 1;
 	position: relative;
+	left: 23.36px;
 	cursor: pointer;
 	background: none;
 	border: none;
@@ -37,7 +39,37 @@
 .Carrousel--vectorD {
 	z-index: 1;
 	position: relative;
+	right: 23.36px;
 	cursor: pointer;
 	background: none;
 	border: none;
+}
+
+@media all and (max-width: 375px) {
+	.Carrousel {
+		height: 255px;
+		bottom: 19.8px;
+		margin-bottom: 15px;
+	}
+	.Carrousel__buttons {
+		padding: 0px;
+		top: 145.1px;
+	}
+	.Carrousel--vectorG {
+		left: 5.84px;
+	}
+	.Carrousel--vectorG img {
+		width: 11.67px;
+		height: 19.8px;
+		left: 5.84px;
+	}
+	.Carrousel--vectorD {
+		right: 5.84px;
+	}
+
+	.Carrousel--vectorD img {
+		width: 11.67px;
+		height: 19.8px;
+		right: 5.84px;
+	}
 }

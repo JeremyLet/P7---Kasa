@@ -14,9 +14,9 @@ export default function Dropdown(props) {
 	};
 
 	return (
-		<div className="wrapper">
-			<div className="accordeon">
-				<div className="item">
+		<div className="dropdown">
+			<div className="dropdown__accordeon">
+				<div className="dropdown__item">
 					<div className="item__title" onClick={() => toggle()}>
 						<h2 className="item__title--text">{props.title}</h2>
 						<span className="item__title--vector">

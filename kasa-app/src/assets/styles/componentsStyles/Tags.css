@@ -1,6 +1,7 @@
 .Tags {
 	background-color: #ff6060;
 	color: #ffff;
+	min-width: 115px;
 	width: fit-content;
 	height: 25px;
 	border-radius: 10px;
@@ -8,6 +9,15 @@
 	font-weight: 500;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	padding: 2px 22px;
 	margin-right: 10px;
+}
+
+@media all and (max-width: 375px) {
+	.Tags {
+		width: 84px;
+		height: 18px;
+		font-size: 10px;
+	}
 }

@@ -42,14 +42,6 @@ class Carrousel extends React.Component {
 	render() {
 		return (
 			<div className="Carrousel">
-				<img
-					src={this.props.pictures.at(this.state.index)}
-					alt="VacationPlace"
-					className="Carrousel--image"
-				/>
-				<p className="Carrousel__status">
-					{this.state.compteurValue}/{this.props.pictures.length}
-				</p>
 				<div className="Carrousel__buttons">
 					<button
 						onClick={this.picturePrevious.bind(this)}
@@ -65,6 +57,15 @@ class Carrousel extends React.Component {
 						<img src={VectorD} alt="vectorD" />
 					</button>
 				</div>
+
+				<img
+					src={this.props.pictures.at(this.state.index)}
+					alt="VacationPlace"
+					className="Carrousel--image"
+				/>
+				<p className="Carrousel__status">
+					{this.state.compteurValue}/{this.props.pictures.length}
+				</p>
 			</div>
 		);
 	}

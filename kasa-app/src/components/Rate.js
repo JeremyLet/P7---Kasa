@@ -9,17 +9,11 @@ export default function StarScale(props) {
 		<div>
 			{range.map((rangeElem) =>
 				starValue >= rangeElem ? (
-					<span
-						key={rangeElem.toString()}
-						style={{ color: "#ff6060", fontSize: "30px", marginLeft: "10px" }}
-					>
+					<span className="StarVote" key={rangeElem.toString()}>
 						&#9733;
 					</span>
 				) : (
-					<span
-						key={rangeElem.toString()}
-						style={{ color: "#e3e3e3", fontSize: "30px", marginLeft: "10px" }}
-					>
+					<span className="StarEmpty" key={rangeElem.toString()}>
 						&#9733;
 					</span>
 				)

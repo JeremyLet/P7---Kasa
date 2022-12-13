@@ -1,5 +1,5 @@
 .LayoutHeader {
-	padding: 40px 100px;
+	padding: 40px 100px 20px 100px;
 	height: 68px;
 	display: flex;
 	flex-direction: row;
@@ -27,7 +27,8 @@
 
 @media all and (max-width: 375px) {
 	.LayoutHeader {
-		padding: 0px 20px;
+		padding: 20px 20px 0px 20px;
+		height: 47px;
 	}
 
 	.LOGO {
