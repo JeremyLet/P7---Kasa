@@ -47,21 +47,24 @@ class Carrousel extends React.Component {
 					alt="VacationPlace"
 					className="Carrousel--image"
 				/>
-				<div className="Carrousel__buttons">
-					<button
-						onClick={this.picturePrevious.bind(this)}
-						className="Carrousel--vectorG"
-					>
-						<img src={VectorG} alt="vectorG" />
-					</button>
 
-					<button
-						onClick={this.pictureNext.bind(this)}
-						className="Carrousel--vectorD"
-					>
-						<img src={VectorD} alt="vectorD" />
-					</button>
-				</div>
+				{this.state.max > 1 ? (
+					<div className="Carrousel__buttons">
+						<button
+							onClick={this.picturePrevious.bind(this)}
+							className="Carrousel--vectorG"
+						>
+							<img src={VectorG} alt="vectorG" />
+						</button>
+						<button
+							onClick={this.pictureNext.bind(this)}
+							className="Carrousel--vectorD"
+						>
+							<img src={VectorD} alt="vectorD" />
+						</button>
+					</div>
+				) : null}
+
 				<p className="Carrousel__status">
 					{this.state.compteurValue}/{this.props.pictures.length}
 				</p>
