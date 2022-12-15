@@ -3,15 +3,17 @@
 }
 
 .Title--name {
-	color: #ff6060;
+	font-family: "Montserrat";
 	font-size: 36px;
+	color: #ff6060;
 	font-weight: 500;
 	margin: 0;
 }
 
 .Title--location {
-	color: #ff6060;
+	font-family: "Montserrat";
 	font-size: 18px;
+	color: #ff6060;
 	font-weight: 500;
 	margin: 0;
 	margin-bottom: 20px;

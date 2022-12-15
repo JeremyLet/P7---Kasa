@@ -16,7 +16,8 @@
 }
 
 .FooterDetails__text {
-	color: #ffff;
+	font-family: "Montserrat";
 	font-size: 12px;
+	color: #ffff;
 	font-weight: 500;
 }

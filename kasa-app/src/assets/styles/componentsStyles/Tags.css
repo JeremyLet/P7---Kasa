@@ -1,18 +1,19 @@
 .Tags {
+	font-family: "Montserrat";
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 	background-color: #ff6060;
-	color: #ffff;
 	width: 115px;
 	height: 25px;
 	border-radius: 10px;
-	font-size: 14px;
-	font-weight: 500;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 2px 22px;
 	margin-right: 10px;
-	white-space: nowrap;
-	text-overflow: ellipsis;
 }
 
 @media all and (max-width: 375px) {

@@ -15,8 +15,9 @@
 }
 
 .resultSection__title {
-	color: rgba(255, 255, 255, 1);
+	font-family: "Montserrat";
 	font-size: 48px;
+	color: #fff;
 	font-weight: 500;
 	position: relative;
 	bottom: 146px;

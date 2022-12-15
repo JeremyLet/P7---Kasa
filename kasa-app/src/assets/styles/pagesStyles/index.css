@@ -2,11 +2,11 @@
 	width: 1440px;
 	margin: auto;
 	text-decoration: none;
-	font-family: "Montserrat";
 }
 
 @media all and (max-width: 375px) {
 	#root {
 		width: 375px;
+		height: 812px;
 	}
 }

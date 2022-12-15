@@ -5,8 +5,9 @@
 }
 
 .Host--name {
-	color: #ff6060;
+	font-family: "Montserrat";
 	font-size: 18px;
+	color: #ff6060;
 	font-weight: 500;
 	margin-right: 10px;
 	width: min-content;

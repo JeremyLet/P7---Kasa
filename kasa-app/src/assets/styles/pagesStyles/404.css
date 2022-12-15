@@ -6,8 +6,9 @@
 }
 
 .__BlocError404--Title {
-	color: #ff6060;
+	font-family: "Montserrat";
 	font-size: 288px;
+	color: #ff6060;
 	font-weight: 700;
 	height: fit-content;
 	width: fit-content;
@@ -16,9 +17,9 @@
 }
 
 .__BlocError404--Details {
-	color: #ff6060;
 	font-family: "Montserrat";
 	font-size: 36px;
+	color: #ff6060;
 	font-weight: 500;
 	height: fit-content;
 	width: fit-content;
@@ -27,8 +28,9 @@
 }
 
 .__BlocError404--returnLanding {
-	color: #ff6060;
 	font-family: "Montserrat";
 	font-size: 18px;
+	color: #ff6060;
+	font-weight: 500;
 	text-decoration: underline;
 }

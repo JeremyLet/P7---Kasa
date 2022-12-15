@@ -1,4 +1,8 @@
 .dropdown {
+	font-family: "Montserrat";
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
 	width: 82.5%;
 }
 
@@ -21,8 +25,9 @@
 }
 
 .item__title--text {
-	color: #ffff;
+	font-family: "Montserrat";
 	font-size: 24px;
+	color: #fff;
 	font-weight: 500;
 }
 
@@ -42,10 +47,11 @@
 }
 
 .content-show {
-	background-color: #f7f7f7;
+	font-family: "Montserrat";
 	font-size: 24px;
-	font-weight: 400;
 	color: #ff6060;
+	font-weight: 500;
+	background-color: #f7f7f7;
 	padding: 27px;
 }
 

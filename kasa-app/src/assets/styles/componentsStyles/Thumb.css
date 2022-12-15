@@ -21,10 +21,12 @@
 }
 
 .ThumbBloc__title {
-	color: #ffff;
+	font-family: "Montserrat";
 	font-size: 18px;
-	height: 52px;
+	color: #fff;
 	font-weight: 500;
+	color: #ffff;
+	height: 52px;
 	margin: 20px;
 	position: relative;
 	bottom: 75px;
