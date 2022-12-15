@@ -30,6 +30,10 @@
 }
 
 .dropdownBloc .content-show {
+	font-family: "Montserrat";
+	font-size: 18px;
+	color: #ff6060;
+	font-weight: 400;
 	height: 250px;
 	display: flex;
 	flex-direction: column;
@@ -37,6 +41,12 @@
 	align-items: flex-start;
 	list-style-type: none;
 	margin-bottom: 5px;
+}
+.dropdownBloc .item__title--text {
+	font-family: "Montserrat";
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
 }
 
 @media all and (max-width: 375px) {
