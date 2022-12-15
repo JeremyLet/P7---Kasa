@@ -1,5 +1,3 @@
-/* BLOC FONT */
-
 .accordeon__item__title--text {
 	font-family: "Montserrat";
 	font-size: 18px;
@@ -13,7 +11,10 @@
 	font-weight: 400;
 }
 
-/* */
+.dropdownBloc .accordeon--content-show {
+	height: 249px;
+	padding: 40px 12px 25px 20px;
+}
 
 .Body {
 	margin: 0px 100px;
@@ -25,9 +26,12 @@
 
 .BodyBloc__details {
 	width: 75%;
+	margin-bottom: 16px;
+	margin-top: 30px;
 }
 .RateHostBloc {
 	width: 25%;
+	height: 33px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -35,6 +39,7 @@
 
 .TagsBloc {
 	display: flex;
+	margin-bottom: 24px;
 }
 
 .dropdownBloc {

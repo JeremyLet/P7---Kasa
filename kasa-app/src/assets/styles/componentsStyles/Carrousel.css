@@ -51,6 +51,9 @@
 		height: 255px;
 		margin-bottom: 15px;
 	}
+	.Carrousel--image {
+		border-radius: 10px;
+	}
 	.Carrousel__buttons {
 		padding: 0px;
 		bottom: 142px;

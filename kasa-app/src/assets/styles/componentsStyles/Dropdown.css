@@ -4,11 +4,12 @@
 
 .accordeon {
 	width: 100%;
+	border-radius: 10px;
 }
 
 .accordeon__item {
 	background: #ff6060;
-	border-radius: 5px;
+	border-radius: 10px;
 	margin-bottom: 50px;
 	cursor: pointer;
 }
@@ -38,12 +39,14 @@
 
 .accordeon--content-show {
 	background-color: #f7f7f7;
-	padding: 27px;
+	padding: 18px 27px 10px 36px;
+	border-radius: 10px;
+	list-style-type: none;
 }
 
 @media all and (max-width: 375px) {
 	.accordeon__item {
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 	}
 	.accordeon__item__title {
 		height: 30px;

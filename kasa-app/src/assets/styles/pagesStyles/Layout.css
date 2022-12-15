@@ -7,11 +7,17 @@
 	align-items: center;
 }
 
+.LayoutHeader__Nav {
+	height: 50%;
+	width: 313px;
+}
+
 .LayoutHeader__Nav--List {
 	display: flex;
 	flex-direction: row;
 	list-style-type: none;
 	margin: 0px;
+	padding: 0px;
 }
 
 .LayoutHeader__Nav--Links {
@@ -27,10 +33,19 @@
 	text-decoration: underline;
 }
 
+.LOGO {
+	width: 210.32px;
+}
+
 @media all and (max-width: 375px) {
 	.LayoutHeader {
 		padding: 20px 20px 0px 20px;
 		height: 47px;
+	}
+
+	.LayoutHeader__Nav {
+		height: 17px;
+		width: 140px;
 	}
 
 	.LOGO {

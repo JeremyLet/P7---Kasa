@@ -1,5 +1,7 @@
 .Title {
-	width: fit-content;
+	width: 635px;
+
+	margin-bottom: 20px;
 }
 
 .Title--name {
@@ -20,6 +22,11 @@
 }
 
 @media all and (max-width: 375px) {
+	.Title {
+		width: 100%;
+		height: 73px;
+		margin-bottom: 10px;
+	}
 	.Title--name {
 		font-size: 18px;
 	}

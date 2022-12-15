@@ -1,5 +1,3 @@
-/* BLOC FONT */
-
 .accordeon__item__title--text {
 	font-family: "Montserrat";
 	font-size: 24px;
@@ -11,9 +9,13 @@
 	font-size: 24px;
 	color: #ff6060;
 	font-weight: 400;
+	height: fit-content;
 }
 
-/* */
+.Dropdown-About .accordeon--content-show {
+	height: fit-content;
+	padding: 36px 27px 19px 18px;
+}
 
 .AboutBloc {
 	padding: 0px 100px;
@@ -37,7 +39,7 @@
 
 @media all and (max-width: 375px) {
 	.AboutBloc {
-		padding: 20px;
+		padding: 17px 20px;
 	}
 	.AboutBloc .resultSection {
 		width: 336px;
