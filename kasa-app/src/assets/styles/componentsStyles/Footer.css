@@ -21,3 +21,12 @@
 	color: #ffff;
 	font-weight: 500;
 }
+
+@media all and (max-width: 375px) {
+	.FooterDetails__text {
+		font-family: "Montserrat";
+		font-size: 12px;
+		color: #fff;
+		font-weight: 500;
+	}
+}

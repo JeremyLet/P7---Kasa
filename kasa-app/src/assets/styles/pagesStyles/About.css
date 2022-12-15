@@ -1,3 +1,20 @@
+/* BLOC FONT */
+
+.accordeon__item__title--text {
+	font-family: "Montserrat";
+	font-size: 24px;
+	color: #fff;
+	font-weight: 500;
+}
+.accordeon--content-show {
+	font-family: "Montserrat";
+	font-size: 24px;
+	color: #ff6060;
+	font-weight: 400;
+}
+
+/* */
+
 .AboutBloc {
 	padding: 0px 100px;
 }
@@ -23,7 +40,20 @@
 		padding: 20px;
 	}
 	.AboutBloc .resultSection {
+		width: 336px;
 		height: 223px;
 		margin-bottom: 19px;
+	}
+	.accordeon__item__title--text {
+		font-family: "Montserrat";
+		font-size: 13px;
+		color: #fff;
+		font-weight: 500;
+	}
+	.accordeon--content-show {
+		font-family: "Montserrat";
+		font-size: 12px;
+		color: #ff6060;
+		font-weight: 400;
 	}
 }

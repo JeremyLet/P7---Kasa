@@ -1,75 +1,65 @@
 .dropdown {
-	font-family: "Montserrat";
-	font-size: 18px;
-	color: #fff;
-	font-weight: 500;
-	width: 82.5%;
-}
-
-.dropdown__accordeon {
 	width: 100%;
 }
 
-.dropdown__item {
+.accordeon {
+	width: 100%;
+}
+
+.accordeon__item {
 	background: #ff6060;
 	border-radius: 5px;
 	margin-bottom: 50px;
 	cursor: pointer;
 }
 
-.item__title {
+.accordeon__item__title {
+	height: 47px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0px 17px;
 }
 
-.item__title--text {
-	font-family: "Montserrat";
-	font-size: 24px;
-	color: #fff;
-	font-weight: 500;
-}
-
-.item__title--vector {
+.accordeon__item__title--vectors {
 	cursor: pointer;
 }
 
-.content {
+.accordeon--content {
 	max-height: 0;
 	overflow: hidden;
 	transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
-.content .show {
+.accordeon--content .show {
 	height: auto;
 	max-height: 146;
 	transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
-.content-show {
-	font-family: "Montserrat";
-	font-size: 24px;
-	color: #ff6060;
-	font-weight: 400;
+.accordeon--content-show {
 	background-color: #f7f7f7;
 	padding: 27px;
 }
 
 @media all and (max-width: 375px) {
-	.dropdown {
-		width: 335px;
-	}
-	.dropdown__item {
+	.accordeon__item {
 		margin-bottom: 20px;
 	}
-	.item__title--text {
-		font-size: 13px;
+	.accordeon__item__title {
+		height: 30px;
 	}
-	.content .show {
+
+	.accordeon__item__title--text {
+		font-family: "Montserrat";
+		font-size: 13px;
+		color: #fff;
+		font-weight: 500;
+	}
+	.accordeon--content .show {
 		max-height: 143px;
 	}
 
-	.content-show {
+	.accordeon--content-show {
 		height: fit-content;
 		font-size: 12px;
 		padding: 17px 6.91px 6.91px 11.51px;

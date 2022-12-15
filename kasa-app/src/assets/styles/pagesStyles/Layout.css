@@ -41,6 +41,10 @@
 		font-size: 12px;
 	}
 	.LayoutHeader__Nav--Links {
+		font-family: "Montserrat";
+		font-size: 12px;
+		color: #ff6060;
+		font-weight: 500;
 		margin-left: 10px;
 	}
 }

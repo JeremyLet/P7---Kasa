@@ -56,7 +56,7 @@
 		bottom: 142px;
 	}
 	.Carrousel__status {
-		bottom: 45px;
+		display: none;
 	}
 	.Carrousel--vectorG {
 		left: 5.84px;

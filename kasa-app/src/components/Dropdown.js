@@ -15,11 +15,11 @@ export default function Dropdown(props) {
 
 	return (
 		<div className="dropdown">
-			<div className="dropdown__accordeon">
-				<div className="dropdown__item">
-					<div className="item__title" onClick={() => toggle()}>
-						<h2 className="item__title--text">{props.title}</h2>
-						<span className="item__title--vector">
+			<div className="accordeon">
+				<div className="accordeon__item">
+					<div className="accordeon__item__title" onClick={() => toggle()}>
+						<h2 className="accordeon__item__title--text">{props.title}</h2>
+						<span className="accordeon__item__title--vectors	">
 							{selected === "OK" ? (
 								<img src={VectorUP} alt="vectorUp" className="vectorUp" />
 							) : (
@@ -27,7 +27,13 @@ export default function Dropdown(props) {
 							)}
 						</span>
 					</div>
-					<div className={selected === "OK" ? "content-show" : "content"}>
+					<div
+						className={
+							selected === "OK"
+								? "accordeon--content-show"
+								: "accordeon--content"
+						}
+					>
 						{props.details}
 					</div>
 				</div>

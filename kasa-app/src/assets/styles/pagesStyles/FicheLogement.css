@@ -1,3 +1,20 @@
+/* BLOC FONT */
+
+.accordeon__item__title--text {
+	font-family: "Montserrat";
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+}
+.accordeon--content-show {
+	font-family: "Montserrat";
+	font-size: 18px;
+	color: #ff6060;
+	font-weight: 400;
+}
+
+/* */
+
 .Body {
 	margin: 0px 100px;
 }
@@ -30,10 +47,6 @@
 }
 
 .dropdownBloc .content-show {
-	font-family: "Montserrat";
-	font-size: 18px;
-	color: #ff6060;
-	font-weight: 400;
 	height: 250px;
 	display: flex;
 	flex-direction: column;
@@ -41,12 +54,6 @@
 	align-items: flex-start;
 	list-style-type: none;
 	margin-bottom: 5px;
-}
-.dropdownBloc .item__title--text {
-	font-family: "Montserrat";
-	font-size: 18px;
-	color: #fff;
-	font-weight: 500;
 }
 
 @media all and (max-width: 375px) {
@@ -70,7 +77,18 @@
 	.dropdownBloc .dropdown {
 		width: 100%;
 	}
-	.dropdownBloc .content-show {
+
+	.accordeon__item__title--text {
+		font-family: "Montserrat";
+		font-size: 13px;
+		color: #fff;
+		font-weight: 500;
+	}
+	.accordeon--content-show {
+		font-family: "Montserrat";
+		font-size: 12px;
+		color: #ff6060;
+		font-weight: 400;
 		height: fit-content;
 	}
 }
