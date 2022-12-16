@@ -3,14 +3,13 @@ import Section1 from "../components/Section1";
 import Footer from "../components/Footer";
 import Dropdown from "../components/Dropdown";
 import Commercials from "../back & data/CTA";
-import BannerAboutImage from "../assets/images/BannerAboutImage.png";
 import VectorDOWN from "../assets/images/VectorDOWN.svg";
 
 const About = () => {
 	return (
 		<>
 			<div className="AboutBloc">
-				<Section1 image={BannerAboutImage} />
+				<Section1 className="AboutBLoc__image" />
 				{[...Array(4)].map((index, nom) => {
 					return (
 						<div key={nom} className="Dropdown-About">
