@@ -27,9 +27,9 @@
 	font-weight: 500;
 	color: #ffff;
 	height: 52px;
-	margin: 0px 19.71px 15px 19.71px;
+	margin: 0px 20px 20px 20px;
 	position: relative;
-	bottom: 75px;
+	bottom: 71px;
 	display: flex;
 	align-content: stretch;
 }
@@ -46,5 +46,9 @@
 		width: 335px;
 		height: 255px;
 		margin: 20px 0px;
+	}
+	.ThumbBloc__title {
+		margin: 0px 19.71px 15px 19.71px;
+		bottom: 68px;
 	}
 }

@@ -23,12 +23,8 @@
 
 .resultSection {
 	background-image: url("/src/assets/images/BannerAboutImage.png");
-	filter: brightness(70%);
 }
 
-.resultSection__illustration {
-	display: none;
-}
 .Dropdown-About .dropdown {
 	margin: auto;
 }

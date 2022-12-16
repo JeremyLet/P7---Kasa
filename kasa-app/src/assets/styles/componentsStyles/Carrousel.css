@@ -18,7 +18,7 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	bottom: 284.7px;
+	bottom: 276px;
 }
 
 .Carrousel--image {
@@ -29,22 +29,25 @@
 	z-index: -1;
 }
 
-.Carrousel--vectorG {
-	width: 32px;
-	height: 32px;
+.Carrousel__buttons--vectorG {
+	width: 96px;
+	height: 119.64px;
 	z-index: 1;
-	position: relative;
-	left: 23.36px;
+	padding: 0px;
 	cursor: pointer;
 	background: none;
 	border: none;
 }
-.Carrousel--vectorD {
-	width: 32px;
-	height: 32px;
+
+.Carrousel__buttons--icon {
+	margin: 8.4px 23.36px 32.04px 23.36px;
+}
+
+.Carrousel__buttons--vectorD {
+	width: 96px;
+	height: 119.64px;
 	z-index: 1;
-	position: relative;
-	right: 23.36px;
+	padding: 0px;
 	cursor: pointer;
 	background: none;
 	border: none;
@@ -65,21 +68,20 @@
 	.Carrousel__status {
 		display: none;
 	}
-	.Carrousel--vectorG {
-		left: 5.84px;
-	}
-	.Carrousel--vectorG img {
-		width: 11.67px;
-		height: 19.8px;
-		left: 5.84px;
-	}
-	.Carrousel--vectorD {
-		right: 5.84px;
+
+	.Carrousel__buttons--vectorG {
+		width: 24px;
+		height: 24px;
 	}
 
-	.Carrousel--vectorD img {
+	.Carrousel__buttons--icon {
 		width: 11.67px;
 		height: 19.8px;
-		right: 5.84px;
+		margin: 2px 6px;
+	}
+
+	.Carrousel__buttons--vectorD {
+		width: 24px;
+		height: 24px;
 	}
 }

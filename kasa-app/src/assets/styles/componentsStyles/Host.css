@@ -24,6 +24,8 @@
 	.Host--name {
 		width: min-content;
 		font-size: 12px;
+		display: flex;
+		align-items: center;
 	}
 	.Host--picture {
 		width: 32px;

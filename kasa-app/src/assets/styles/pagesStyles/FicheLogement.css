@@ -20,14 +20,13 @@
 	margin: 0px 100px;
 }
 .BodyBloc {
+	height: 121px;
 	display: flex;
 	margin-bottom: 25px;
 }
 
 .BodyBloc__details {
 	width: 75%;
-	margin-bottom: 16px;
-	margin-top: 30px;
 }
 .RateHostBloc {
 	width: 25%;
@@ -66,15 +65,23 @@
 		margin: 27px 20px;
 	}
 	.BodyBloc {
-		display: block;
+		height: 150px;
+		flex-wrap: wrap;
+	}
+	.BodyBloc__details {
+		width: 100%;
 	}
 	.RateHostBloc {
 		width: 100%;
-		margin-top: 17.84px;
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: space-between;
+	}
+	.TagsBloc {
+		width: 375px;
+		flex-wrap: wrap;
+		margin-bottom: 0px;
 	}
 	.dropdownBloc {
 		flex-direction: column;

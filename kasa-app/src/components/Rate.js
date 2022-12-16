@@ -6,7 +6,7 @@ export default function StarScale(props) {
 	const range = [1, 2, 3, 4, 5];
 
 	return (
-		<div>
+		<div className="StarScaleBloc">
 			{range.map((rangeElem) =>
 				starValue >= rangeElem ? (
 					<span className="StarVote" key={rangeElem.toString()}>
