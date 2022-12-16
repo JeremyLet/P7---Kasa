@@ -18,10 +18,10 @@
 }
 
 .AboutBloc {
-	padding: 0px 100px;
+	padding: 20px 100px;
 }
 
-.resultSection {
+.AboutBloc .resultSection__background {
 	background-image: url("/src/assets/images/BannerAboutImage.png");
 }
 
@@ -41,9 +41,10 @@
 		padding: 17px 20px;
 	}
 	.AboutBloc .resultSection {
-		width: 336px;
 		height: 223px;
-		margin-bottom: 19px;
+		position: relative;
+		top: 18px;
+		margin-bottom: 25px;
 	}
 	.accordeon__item__title--text {
 		font-family: "Montserrat";
@@ -57,7 +58,8 @@
 		color: #ff6060;
 		font-weight: 400;
 	}
-	.resultSection {
+	.AboutBloc .resultSection__background {
+		height: 223px;
 		background-image: url("/src/assets/images/BannerAboutImageMobile.png");
 	}
 }

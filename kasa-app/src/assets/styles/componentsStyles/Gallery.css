@@ -13,13 +13,13 @@
 
 @media all and (max-width: 992px) {
 	.Gallery {
-		width: 95%;
+		width: 100%;
 	}
 }
 
 @media all and (max-width: 375px) {
 	.Gallery {
-		padding: 22px 0px;
+		padding: 0px;
 		background-color: #fff;
 	}
 }

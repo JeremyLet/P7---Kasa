@@ -42,6 +42,9 @@
 }
 
 @media all and (max-width: 375px) {
+	.ThumbBloc {
+		width: 335px;
+	}
 	.ThumbBloc__link {
 		width: 335px;
 		height: 255px;

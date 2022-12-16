@@ -2,8 +2,23 @@
 	padding: 43px 100px;
 }
 
+.Home .resultSection__background {
+	background-image: url("/src/assets//images/BannerLandingImage.png");
+}
+
 @media all and (max-width: 375px) {
+	.Home .resultSection {
+		height: 111px;
+		position: relative;
+		top: 22px;
+	}
+
 	.Home {
 		padding: 16px 20px;
+	}
+	.Home .resultSection__background {
+		background-image: url("/src/assets//images/BannerLandingMobile.png");
+		height: 111px;
+		bottom: 68px;
 	}
 }
