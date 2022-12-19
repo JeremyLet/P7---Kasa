@@ -12,14 +12,12 @@ const About = () => {
 				<Section1 className="AboutBLoc__image" />
 				{[...Array(4)].map((index, nom) => {
 					return (
-						<div key={nom} className="Dropdown-About">
-							<Dropdown
-								key={nom}
-								title={Commercials[nom].nom}
-								details={Commercials[nom].details}
-								vector={VectorDOWN}
-							/>
-						</div>
+						<Dropdown
+							key={nom}
+							title={Commercials[nom].nom}
+							details={Commercials[nom].details}
+							vector={VectorDOWN}
+						/>
 					);
 				})}
 			</div>

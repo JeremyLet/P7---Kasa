@@ -1,4 +1,12 @@
-.accordeon__item__title--text {
+.AboutBloc {
+	padding: 20px 100px;
+}
+
+.AboutBloc .resultSection__background {
+	background-image: url("/src/assets/images/BannerAboutImage.png");
+}
+
+/* .accordeon__item__title--text {
 	font-family: "Montserrat";
 	font-size: 24px;
 	color: #fff;
@@ -10,22 +18,14 @@
 	color: #ff6060;
 	font-weight: 400;
 	height: fit-content;
-}
+} */
 
-.Dropdown-About .accordeon--content-show {
+/* .Dropdown-About .accordeon--content-show {
 	height: fit-content;
 	padding: 36px 27px 19px 18px;
-}
+} */
 
-.AboutBloc {
-	padding: 20px 100px;
-}
-
-.AboutBloc .resultSection__background {
-	background-image: url("/src/assets/images/BannerAboutImage.png");
-}
-
-.Dropdown-About .dropdown {
+/* .Dropdown-About .dropdown {
 	margin: auto;
 }
 
@@ -34,7 +34,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-}
+} */
 
 @media all and (max-width: 375px) {
 	.AboutBloc {
@@ -43,14 +43,17 @@
 	.AboutBloc .resultSection__title {
 		display: none;
 	}
-
 	.AboutBloc .resultSection {
 		height: 223px;
 		margin-bottom: 19px;
 		position: relative;
 		top: 82px;
 	}
-	.accordeon__item__title--text {
+	.AboutBloc .resultSection__background {
+		height: 223px;
+		background-image: url("/src/assets/images/BannerAboutImageMobile.png");
+	}
+	/* .accordeon__item__title--text {
 		font-family: "Montserrat";
 		font-size: 13px;
 		color: #fff;
@@ -61,9 +64,5 @@
 		font-size: 12px;
 		color: #ff6060;
 		font-weight: 400;
-	}
-	.AboutBloc .resultSection__background {
-		height: 223px;
-		background-image: url("/src/assets/images/BannerAboutImageMobile.png");
-	}
+	} */
 }

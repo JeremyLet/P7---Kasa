@@ -1,25 +1,20 @@
-.dropdown {
-	width: 100%;
-}
+/* BLOC DE  STYLE GENERAL (Desktop) */
 
-.accordeon {
-	width: 100%;
-	border-radius: 10px;
+.dropdown {
+	font-family: "Montserrat";
+	font-weight: 500;
 }
 
 .accordeon__item {
-	background: #ff6060;
-	border-radius: 10px;
-	margin-bottom: 50px;
 	cursor: pointer;
 }
 
 .accordeon__item__title {
-	height: 47px;
+	background: #ff6060;
+	color: #fff;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0px 17px;
 }
 
 .accordeon__item__title--vectors {
@@ -33,16 +28,68 @@
 }
 .accordeon--content .show {
 	height: auto;
-	max-height: 146;
+	max-height: 9999;
 	transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
 .accordeon--content-show {
 	background-color: #f7f7f7;
-	padding: 18px 27px 10px 36px;
-	border-radius: 10px;
+	color: #ff6060;
 	list-style-type: none;
 }
+
+/* BLOC DE STYLE POUR LA PAGE FICHE LOGEMENT (Desktop) */
+
+.dropdownBloc .dropdown {
+	width: 582px;
+}
+
+.dropdownBloc .accordeon__item__title {
+	width: 582px;
+	height: 52px;
+	font-size: 18px;
+}
+
+.dropdownBloc .accordeon--content-show {
+	font-size: 18px;
+	height: 249px;
+	border-radius: 10px;
+}
+
+/* 
+
+- RADIUS DU BLOC TITLE --> 10PX
+- FONT SIZE DU DETAILS TEXT --> 18PX
+- TAILLE BOX DE VECTEUR ARROW --> 28.92 * 28.92
+- MARGIN DU BLOC CONTENT SHOW (Inté) --> g 20PX d12px h 40px b 0px
+
+*/
+
+/* BLOC DE STYLE POUR LA PAGE ABOUT (Desktop) */
+
+.AboutBloc .dropdown {
+	width: 1023px;
+}
+
+.AboutBloc .accordeon__item__title {
+	height: 47px;
+	font-size: 24px;
+}
+
+.AboutBloc .accordeon--content-show {
+	font-size: 24px;
+	height: 146px;
+	border-radius: 5px;
+}
+
+/* 
+
+- FONT SIZE DU DETAILS TEXT --> 24PX
+- TAILLE BOX DE VECTEUR ARROW -->  32 * 32
+- RADIUS DU BLOC TITLE --> 5PX
+- MARGIN DU BLOC CONTENT SHOW (Inté) --> g 18PX d27px h 36px b 19px
+
+*/
 
 @media all and (max-width: 375px) {
 	.accordeon__item {
