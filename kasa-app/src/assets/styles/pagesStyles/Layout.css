@@ -39,13 +39,16 @@
 
 @media all and (max-width: 375px) {
 	.LayoutHeader {
-		padding: 20px 20px 0px 20px;
+		padding: 20px 20px 17px 20px;
 		height: 47px;
 	}
 
 	.LayoutHeader__Nav {
 		height: 17px;
 		width: 140px;
+		display: flex;
+		justify-content: flex-end;
+		z-index: 9999;
 	}
 
 	.LOGO {

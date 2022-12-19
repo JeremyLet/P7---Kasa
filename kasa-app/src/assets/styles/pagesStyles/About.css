@@ -38,13 +38,17 @@
 
 @media all and (max-width: 375px) {
 	.AboutBloc {
-		padding: 17px 20px;
+		padding: 0px 20px 17px 20px;
 	}
+	.AboutBloc .resultSection__title {
+		display: none;
+	}
+
 	.AboutBloc .resultSection {
 		height: 223px;
+		margin-bottom: 19px;
 		position: relative;
-		top: 18px;
-		margin-bottom: 25px;
+		top: 82px;
 	}
 	.accordeon__item__title--text {
 		font-family: "Montserrat";
