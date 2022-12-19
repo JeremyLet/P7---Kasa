@@ -19,6 +19,9 @@
 
 .accordeon__item__title--vectors {
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .accordeon--content {
@@ -40,6 +43,11 @@
 
 /* BLOC DE STYLE POUR LA PAGE FICHE LOGEMENT (Desktop) */
 
+.dropdownBloc {
+	display: flex;
+	justify-content: space-between;
+}
+
 .dropdownBloc .dropdown {
 	width: 582px;
 }
@@ -47,79 +55,69 @@
 .dropdownBloc .accordeon__item__title {
 	width: 582px;
 	height: 52px;
+	border-radius: 10px;
+}
+
+.dropdownBloc .accordeon__item__title--text {
 	font-size: 18px;
+	font-weight: 500;
+	margin-left: 20px;
+}
+
+.dropdownBloc .accordeon__item__title--vectors {
+	width: 32px;
+	height: 32px;
+	margin-right: 10px;
+}
+
+.dropdownBloc .accordeon--content {
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .dropdownBloc .accordeon--content-show {
 	font-size: 18px;
 	height: 249px;
 	border-radius: 10px;
+	padding: 40px 12px 0px 20px;
+	line-height: 25.67px;
 }
-
-/* 
-
-- RADIUS DU BLOC TITLE --> 10PX
-- FONT SIZE DU DETAILS TEXT --> 18PX
-- TAILLE BOX DE VECTEUR ARROW --> 28.92 * 28.92
-- MARGIN DU BLOC CONTENT SHOW (Inté) --> g 20PX d12px h 40px b 0px
-
-*/
 
 /* BLOC DE STYLE POUR LA PAGE ABOUT (Desktop) */
 
 .AboutBloc .dropdown {
 	width: 1023px;
+	margin: auto;
+	margin-bottom: 31px;
 }
 
 .AboutBloc .accordeon__item__title {
 	height: 47px;
+	border-radius: 5px;
+	padding: 0px 18px 0px 30px;
+}
+
+.AboutBloc .accordeon__item__title--text {
 	font-size: 24px;
+	font-weight: 500;
+}
+
+.AboutBloc .accordeon__item__title--vectors {
+	width: 28.92px;
+	height: 28.92px;
+}
+
+.AboutBloc .accordeon--content {
+	font-size: 24px;
+	font-weight: 400;
 }
 
 .AboutBloc .accordeon--content-show {
 	font-size: 24px;
-	height: 146px;
+	max-height: 223px;
 	border-radius: 5px;
+	padding: 36px 27px 19px 18px;
 }
 
-/* 
-
-- FONT SIZE DU DETAILS TEXT --> 24PX
-- TAILLE BOX DE VECTEUR ARROW -->  32 * 32
-- RADIUS DU BLOC TITLE --> 5PX
-- MARGIN DU BLOC CONTENT SHOW (Inté) --> g 18PX d27px h 36px b 19px
-
-*/
-
 @media all and (max-width: 375px) {
-	.accordeon__item {
-		margin-bottom: 50px;
-	}
-	.accordeon__item__title {
-		height: 30px;
-	}
-
-	.accordeon__item__title--text {
-		font-family: "Montserrat";
-		font-size: 13px;
-		color: #fff;
-		font-weight: 500;
-	}
-	.accordeon--content .show {
-		max-height: 143px;
-	}
-
-	.accordeon--content-show {
-		height: fit-content;
-		font-size: 12px;
-		padding: 17px 6.91px 6.91px 11.51px;
-	}
-	.vectorUp {
-		width: 8.98px;
-		height: 15.2px;
-	}
-	.vectorDown {
-		width: 8.98px;
-		height: 15.2px;
-	}
 }
