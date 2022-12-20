@@ -34,3 +34,32 @@
 	font-weight: 500;
 	text-decoration: underline;
 }
+
+@media all and (max-width: 375px) {
+	/* .__BlocError404 {
+		height: 728px;
+	} */
+	.__BlocError404--Title {
+		width: 198px;
+		height: 99px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 178px;
+		font-size: 96px;
+		margin-bottom: 11px;
+	}
+
+	.__BlocError404--Details {
+		font-size: 18px;
+		width: 260px;
+		height: 52px;
+		text-align: center;
+		margin-bottom: 133px;
+	}
+
+	.__BlocError404--returnLanding {
+		font-size: 14px;
+		margin-bottom: 210px;
+	}
+}

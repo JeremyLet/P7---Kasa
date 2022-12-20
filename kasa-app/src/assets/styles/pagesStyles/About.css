@@ -6,36 +6,6 @@
 	background-image: url("/src/assets/images/BannerAboutImage.png");
 }
 
-/* .accordeon__item__title--text {
-	font-family: "Montserrat";
-	font-size: 24px;
-	color: #fff;
-	font-weight: 500;
-}
-.accordeon--content-show {
-	font-family: "Montserrat";
-	font-size: 24px;
-	color: #ff6060;
-	font-weight: 400;
-	height: fit-content;
-} */
-
-/* .Dropdown-About .accordeon--content-show {
-	height: fit-content;
-	padding: 36px 27px 19px 18px;
-} */
-
-/* .Dropdown-About .dropdown {
-	margin: auto;
-}
-
-.Dropdown-About .content-show {
-	height: 150px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-} */
-
 @media all and (max-width: 375px) {
 	.AboutBloc {
 		padding: 0px 20px 17px 20px;
@@ -53,16 +23,4 @@
 		height: 223px;
 		background-image: url("/src/assets/images/BannerAboutImageMobile.png");
 	}
-	/* .accordeon__item__title--text {
-		font-family: "Montserrat";
-		font-size: 13px;
-		color: #fff;
-		font-weight: 500;
-	}
-	.accordeon--content-show {
-		font-family: "Montserrat";
-		font-size: 12px;
-		color: #ff6060;
-		font-weight: 400;
-	} */
 }
