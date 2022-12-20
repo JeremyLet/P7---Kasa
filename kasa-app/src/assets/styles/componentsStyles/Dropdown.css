@@ -40,6 +40,20 @@
 	color: #ff6060;
 	list-style-type: none;
 }
+.vectorDown {
+	width: 82.5%;
+	height: 48.6%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.vectorUp {
+	width: 82.5%;
+	height: 48.6%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /* BLOC DE STYLE POUR LA PAGE FICHE LOGEMENT (Desktop) */
 
@@ -120,4 +134,66 @@
 }
 
 @media all and (max-width: 375px) {
+	/* RESPONSIVE Page Fiche Logement */
+
+	.dropdownBloc {
+		flex-direction: column;
+	}
+
+	.dropdownBloc .dropdown {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.dropdownBloc .accordeon__item__title {
+		width: 100%;
+		height: 29.93px;
+		border-radius: 5px;
+	}
+	.dropdownBloc .accordeon__item__title--text {
+		font-size: 13px;
+		margin-left: 11.51px;
+	}
+	.dropdownBloc .accordeon--content-show {
+		font-size: 12px;
+		line-height: 17.11px;
+		max-height: 143px;
+		padding: 23.08px 6.91px 6.91px 11.51px;
+	}
+	.dropdownBloc .accordeon__item__title--vectors {
+		width: 18.42px;
+		height: 18.42px;
+		margin-right: 5.77px;
+	}
+
+	/* RESPONSIVE Page About */
+
+	.AboutBloc .dropdown {
+		width: 100%;
+		margin: auto;
+		margin-bottom: 31px;
+		z-index: 9999;
+	}
+
+	.AboutBloc .accordeon__item__title {
+		height: 30px;
+		border-radius: 5px;
+		padding: 0px;
+	}
+	.AboutBloc .accordeon__item__title--text {
+		font-size: 13px;
+		margin-left: 11.51px;
+	}
+	.AboutBloc .accordeon--content-show {
+		font-size: 12px;
+		line-height: 17.11px;
+		max-height: 143px;
+		padding: 23.08px 6.91px 6.91px 11.51px;
+	}
+	.AboutBloc .accordeon__item__title--vectors {
+		width: 18.42px;
+		height: 18.42px;
+		margin-right: 5.77px;
+		z-index: 9999;
+	}
 }
