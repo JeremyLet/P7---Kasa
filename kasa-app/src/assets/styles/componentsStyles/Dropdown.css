@@ -154,11 +154,22 @@
 		font-size: 13px;
 		margin-left: 11.51px;
 	}
+
+	.dropdownBloc .accordeon--content {
+		color: #ff6060;
+		font-size: 12px;
+	}
+
 	.dropdownBloc .accordeon--content-show {
+		text-align: justify;
 		font-size: 12px;
 		line-height: 17.11px;
 		max-height: 143px;
-		padding: 23.08px 6.91px 6.91px 11.51px;
+		padding: 0px 5.77px 6.91px 11.51px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
 	}
 	.dropdownBloc .accordeon__item__title--vectors {
 		width: 18.42px;
@@ -184,11 +195,16 @@
 		font-size: 13px;
 		margin-left: 11.51px;
 	}
+	.AboutBloc .accordeon--content {
+		color: #ff6060;
+		font-size: 12px;
+	}
 	.AboutBloc .accordeon--content-show {
+		text-align: justify;
 		font-size: 12px;
 		line-height: 17.11px;
 		max-height: 143px;
-		padding: 23.08px 6.91px 6.91px 11.51px;
+		padding: 17.31px 5.77px 6.91px 11.51px;
 	}
 	.AboutBloc .accordeon__item__title--vectors {
 		width: 18.42px;

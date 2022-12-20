@@ -27,51 +27,6 @@
 	display: flex;
 }
 
-/* .accordeon__item__title--text {
-	font-family: "Montserrat";
-	font-size: 18px;
-	color: #fff;
-	font-weight: 500;
-}
-.accordeon--content-show {
-	font-family: "Montserrat";
-	font-size: 18px;
-	color: #ff6060;
-	font-weight: 400;
-}
-
-.dropdownBloc .accordeon {
-	width: 582px;
-}
-
-.dropdownBloc .accordeon__item__title {
-	height: 52px;
-}
-
-.dropdownBloc .accordeon--content-show {
-	height: 249px;
-	padding: 40px 12px 25px 20px;
-} */
-
-/* .dropdownBloc {
-	display: flex;
-	justify-content: space-between;
-}
-
-.dropdownBloc .dropdown {
-	width: 45%;
-}
-
-.dropdownBloc .content-show {
-	height: 250px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	list-style-type: none;
-	margin-bottom: 5px;
-} */
-
 @media all and (max-width: 375px) {
 	.Body {
 		margin: 10px 20px 27px 20px;
@@ -94,27 +49,8 @@
 		justify-content: space-between;
 	}
 	.TagsBloc {
-		width: 375px;
-		flex-wrap: wrap;
+		min-width: 335px;
+		max-width: 375px;
+		justify-content: space-between;
 	}
-	/* .dropdownBloc {
-		flex-direction: column;
-	}
-	.dropdownBloc .dropdown {
-		width: 100%;
-	}
-
-	.accordeon__item__title--text {
-		font-family: "Montserrat";
-		font-size: 13px;
-		color: #fff;
-		font-weight: 500;
-	}
-	.accordeon--content-show {
-		font-family: "Montserrat";
-		font-size: 12px;
-		color: #ff6060;
-		font-weight: 400;
-		height: fit-content;
-	} */
 }

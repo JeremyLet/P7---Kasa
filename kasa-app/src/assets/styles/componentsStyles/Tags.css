@@ -4,7 +4,6 @@
 	color: #fff;
 	font-weight: 500;
 	white-space: nowrap;
-	text-overflow: ellipsis;
 	background-color: #ff6060;
 	width: 115px;
 	height: 25px;
@@ -17,9 +16,10 @@
 
 @media all and (max-width: 375px) {
 	.Tags {
-		width: 84px;
+		width: max-content;
+		min-width: 84px;
+		padding: 0px 8px;
 		height: 18px;
 		font-size: 10px;
-		margin: 0px 10px 0px 0px;
 	}
 }
