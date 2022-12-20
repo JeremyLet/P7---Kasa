@@ -35,10 +35,20 @@
 	text-decoration: underline;
 }
 
+@media all and (max-width: 992px) {
+	.__BlocError404--Title {
+		font-size: 144px;
+	}
+	.__BlocError404--Details {
+		text-align: center;
+		font-size: 18px;
+	}
+	.__BlocError404--returnLanding {
+		font-size: 10px;
+	}
+}
+
 @media all and (max-width: 375px) {
-	/* .__BlocError404 {
-		height: 728px;
-	} */
 	.__BlocError404--Title {
 		width: 198px;
 		height: 99px;

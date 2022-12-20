@@ -30,6 +30,12 @@
 	bottom: 78px;
 }
 
+@media all and (max-width: 992px) {
+	.resultSection__title {
+		font-size: 30px;
+	}
+}
+
 @media all and (max-width: 375px) {
 	.resultSection {
 		width: 100%;

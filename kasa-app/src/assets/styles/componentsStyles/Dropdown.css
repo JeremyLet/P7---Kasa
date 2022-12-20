@@ -25,6 +25,7 @@
 }
 
 .accordeon--content {
+	color: #ff6060;
 	max-height: 0;
 	overflow: hidden;
 	transition: all 0.5s cubic-bezier(0, 1, 0, 1);
@@ -100,7 +101,7 @@
 /* BLOC DE STYLE POUR LA PAGE ABOUT (Desktop) */
 
 .AboutBloc .dropdown {
-	width: 1023px;
+	width: 82.5%;
 	margin: auto;
 	margin-bottom: 31px;
 }
@@ -131,6 +132,22 @@
 	max-height: 223px;
 	border-radius: 5px;
 	padding: 36px 27px 19px 18px;
+}
+
+@media all and (max-width: 992px) {
+	.AboutBloc .dropdown {
+		width: 100%;
+	}
+	.dropdownBloc {
+		flex-direction: column;
+	}
+	.dropdownBloc .dropdown {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.dropdownBloc .accordeon__item__title {
+		width: 100%;
+	}
 }
 
 @media all and (max-width: 375px) {

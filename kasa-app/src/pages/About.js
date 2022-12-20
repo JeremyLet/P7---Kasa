@@ -13,7 +13,7 @@ const About = () => {
 				{[...Array(4)].map((index, nom) => {
 					return (
 						<Dropdown
-							key={nom}
+							key={index}
 							title={Commercials[nom].nom}
 							details={Commercials[nom].details}
 							vector={VectorDOWN}

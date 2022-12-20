@@ -37,9 +37,35 @@
 	width: 210.32px;
 }
 
+/* FORMATS RESPONSIVES */
+
+@media all and (max-width: 992px) {
+	.LayoutHeader {
+		padding: 40px 0px 40px 0px;
+		width: 100%;
+	}
+	.LayoutHeader__Nav {
+		width: 250px;
+	}
+
+	.LOGO {
+		width: 145px;
+		height: 47px;
+		margin-left: 10px;
+	}
+	.LayoutHeader__Nav--Links {
+		margin-left: 10px;
+		font-size: 22px;
+	}
+	.LayoutHeader__Nav--List {
+		justify-content: flex-end;
+	}
+}
+
 @media all and (max-width: 375px) {
 	.LayoutHeader {
-		padding: 20px 20px 17px 20px;
+		width: 100%;
+		padding: 20px 0px 17px 0px;
 		height: 47px;
 	}
 

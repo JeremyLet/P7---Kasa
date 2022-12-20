@@ -6,6 +6,13 @@
 	background-image: url("/src/assets/images/BannerAboutImage.png");
 }
 
+@media all and (max-width: 992px) {
+	.AboutBloc {
+		width: 100%;
+		padding: 0px 0px 0px 0px;
+	}
+}
+
 @media all and (max-width: 375px) {
 	.AboutBloc {
 		padding: 0px 20px 17px 20px;

@@ -35,9 +35,9 @@
 }
 @media all and (max-width: 992px) {
 	.ThumbBloc__link {
-		width: 540px;
+		width: 450px;
 		height: 340px;
-		/* margin: 25px 20px; */
+		margin: 15px;
 	}
 }
 

@@ -25,6 +25,12 @@
 	align-items: center;
 }
 
+@media all and (max-width: 992px) {
+	.Title--name {
+		font-size: 26px;
+	}
+}
+
 @media all and (max-width: 375px) {
 	.Title {
 		width: 100%;

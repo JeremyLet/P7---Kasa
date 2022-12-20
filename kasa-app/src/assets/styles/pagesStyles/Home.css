@@ -6,6 +6,17 @@
 	background-image: url("/src/assets//images/BannerLandingImage.png");
 }
 
+@media all and (max-width: 992px) {
+	.Home {
+		padding: 0px 10px;
+		width: 100%;
+	}
+	.Home .resultSection__background {
+		background-image: url("/src/assets//images/BannerLandingImage.png");
+		object-fit: cover;
+	}
+}
+
 @media all and (max-width: 375px) {
 	.Home .resultSection {
 		height: 111px;
@@ -18,7 +29,7 @@
 	}
 
 	.Home {
-		padding: 0px 20px 16px 20px;
+		padding: 0px 0px 0px 0px;
 	}
 	.Home .resultSection__background {
 		background-image: url("/src/assets//images/BannerLandingMobile.png");

@@ -25,6 +25,12 @@
 	align-items: center;
 }
 
+@media all and (max-width: 992px) {
+	.FooterBloc__details--text {
+		font-size: 20px;
+	}
+}
+
 @media all and (max-width: 375px) {
 	.FooterBloc_image {
 		margin-top: 62px;
