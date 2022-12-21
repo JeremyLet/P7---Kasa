@@ -1,5 +1,5 @@
 .Tags {
-	font-size: 14px;
+	font-size: 1.9vh;
 	color: #fff;
 	font-weight: 500;
 	white-space: nowrap;
@@ -15,10 +15,10 @@
 
 @media all and (max-width: 375px) {
 	.Tags {
-		width: max-content;
-		min-width: 84px;
+		width: 84px;
 		padding: 0px 8px;
 		height: 18px;
 		font-size: 10px;
+		flex-wrap: wrap;
 	}
 }
