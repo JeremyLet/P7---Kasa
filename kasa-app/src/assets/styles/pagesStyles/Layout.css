@@ -1,5 +1,5 @@
 .LayoutHeader {
-	padding: 40px 100px 20px 100px;
+	margin: 40px 100px 60px 100px;
 	height: 68px;
 	display: flex;
 	flex-direction: row;
@@ -9,7 +9,8 @@
 
 .LayoutHeader__Nav {
 	height: 50%;
-	width: 313px;
+	display: flex;
+	align-items: center;
 }
 
 .LayoutHeader__Nav--List {
@@ -21,7 +22,6 @@
 }
 
 .LayoutHeader__Nav--Links {
-	font-family: "Montserrat";
 	font-size: 24px;
 	color: #ff6060;
 	font-weight: 500;
@@ -41,21 +41,15 @@
 
 @media all and (max-width: 992px) {
 	.LayoutHeader {
-		padding: 40px 0px 40px 0px;
-		width: 100%;
+		margin: 20px;
 	}
-	.LayoutHeader__Nav {
-		width: 250px;
-	}
-
 	.LOGO {
 		width: 145px;
 		height: 47px;
-		margin-left: 10px;
 	}
 	.LayoutHeader__Nav--Links {
 		margin-left: 10px;
-		font-size: 22px;
+		font-size: 20px;
 	}
 	.LayoutHeader__Nav--List {
 		justify-content: flex-end;
@@ -64,8 +58,6 @@
 
 @media all and (max-width: 375px) {
 	.LayoutHeader {
-		width: 100%;
-		padding: 20px 0px 17px 0px;
 		height: 47px;
 	}
 
@@ -85,7 +77,6 @@
 		font-size: 12px;
 	}
 	.LayoutHeader__Nav--Links {
-		font-family: "Montserrat";
 		font-size: 12px;
 		color: #ff6060;
 		font-weight: 500;

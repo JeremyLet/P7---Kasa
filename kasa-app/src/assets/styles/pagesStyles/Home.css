@@ -1,5 +1,5 @@
 .Home {
-	padding: 43px 100px;
+	margin: 0px 100px 0px 100px;
 }
 
 .Home .resultSection__background {
@@ -8,8 +8,7 @@
 
 @media all and (max-width: 992px) {
 	.Home {
-		padding: 0px 10px;
-		width: 100%;
+		margin: 0px 20px;
 	}
 	.Home .resultSection__background {
 		background-image: url("/src/assets//images/BannerLandingImage.png");
@@ -28,9 +27,6 @@
 		display: block;
 	}
 
-	.Home {
-		padding: 0px 0px 0px 0px;
-	}
 	.Home .resultSection__background {
 		background-image: url("/src/assets//images/BannerLandingMobile.png");
 		height: 111px;

@@ -1,7 +1,7 @@
 .Gallery {
-	height: 100%;
 	border-radius: 25px;
 	background-color: rgba(246, 246, 246, 1);
+	margin-top: 33px;
 	padding: 31px 20px;
 	display: flex;
 	flex-direction: row;
@@ -13,14 +13,13 @@
 
 @media all and (max-width: 992px) {
 	.Gallery {
-		width: 100%;
-		padding: 0px 0px;
+		margin-top: 15px;
+		padding: 10px;
 	}
 }
 
 @media all and (max-width: 375px) {
 	.Gallery {
-		padding: 0px;
 		background-color: #fff;
 	}
 }

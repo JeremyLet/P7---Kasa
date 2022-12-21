@@ -1,5 +1,19 @@
 .AboutBloc {
-	padding: 20px 100px;
+	margin: 0px 100px;
+	display: flex;
+	flex-direction: column;
+}
+
+.AboutBloc .resultSection {
+	margin-bottom: 21px;
+}
+.AboutBloc .resultSection__title {
+	display: none;
+}
+
+.AboutBloc .accordeon {
+	width: 82.5%;
+	margin: auto;
 }
 
 .AboutBloc .resultSection__background {
@@ -8,15 +22,22 @@
 
 @media all and (max-width: 992px) {
 	.AboutBloc {
+		margin: 0px 20px;
+	}
+	.AboutBloc .accordeon {
 		width: 100%;
-		padding: 0px 0px 0px 0px;
+		margin: 0px;
+	}
+	.AboutBloc .resultSection {
+		margin-bottom: 0px;
+	}
+	.AboutBloc .resultSection__background {
+		position: relative;
+		bottom: 15px;
 	}
 }
 
 @media all and (max-width: 375px) {
-	.AboutBloc {
-		padding: 0px 20px 17px 20px;
-	}
 	.AboutBloc .resultSection__title {
 		display: none;
 	}
@@ -24,7 +45,7 @@
 		height: 223px;
 		margin-bottom: 19px;
 		position: relative;
-		top: 82px;
+		top: 0px;
 	}
 	.AboutBloc .resultSection__background {
 		height: 223px;

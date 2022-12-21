@@ -24,7 +24,6 @@ export default function FicheLogement() {
 					<div className="BodyBloc">
 						<div className="BodyBloc__details">
 							<Title title={result.title} location={result.location} />
-
 							<div className="TagsBloc">
 								{result.tags.map((tags) => {
 									return <Tags key={tags} tags={tags} />;

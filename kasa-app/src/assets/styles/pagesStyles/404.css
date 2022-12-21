@@ -6,29 +6,24 @@
 }
 
 .__BlocError404--Title {
-	font-family: "Montserrat";
 	font-size: 288px;
 	color: #ff6060;
 	font-weight: 700;
 	height: fit-content;
-	width: fit-content;
 	margin: 0;
 	margin-bottom: 66px;
 }
 
 .__BlocError404--Details {
-	font-family: "Montserrat";
 	font-size: 36px;
 	color: #ff6060;
 	font-weight: 500;
 	height: fit-content;
-	width: fit-content;
 	margin: 0;
 	margin-bottom: 182px;
 }
 
 .__BlocError404--returnLanding {
-	font-family: "Montserrat";
 	font-size: 18px;
 	color: #ff6060;
 	font-weight: 500;
@@ -50,7 +45,6 @@
 
 @media all and (max-width: 375px) {
 	.__BlocError404--Title {
-		width: 198px;
 		height: 99px;
 		display: flex;
 		justify-content: center;
@@ -62,7 +56,6 @@
 
 	.__BlocError404--Details {
 		font-size: 18px;
-		width: 260px;
 		height: 52px;
 		text-align: center;
 		margin-bottom: 133px;
