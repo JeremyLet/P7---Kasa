@@ -13,6 +13,12 @@
 	margin-right: 10px;
 }
 
+@media all and (max-width: 992px) {
+	.Tags {
+		margin: 10px;
+	}
+}
+
 @media all and (max-width: 375px) {
 	.Tags {
 		width: 84px;
@@ -20,5 +26,7 @@
 		height: 18px;
 		font-size: 10px;
 		flex-wrap: wrap;
+		margin: 0px;
+		margin-right: 10px;
 	}
 }

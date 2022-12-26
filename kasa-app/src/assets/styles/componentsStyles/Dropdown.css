@@ -64,7 +64,7 @@
 }
 
 .dropdownBloc .dropdown {
-	width: 582px;
+	width: 47%;
 }
 
 .dropdownBloc .accordeon__item__title {
@@ -101,7 +101,7 @@
 
 .AboutBloc .dropdown {
 	margin: auto;
-	margin-bottom: 31px;
+	margin-bottom: 29px;
 }
 
 .AboutBloc .accordeon__item__title {
@@ -137,18 +137,19 @@
 @media all and (max-width: 992px) {
 	.dropdownBloc {
 		margin: 0px 20px;
+		flex-wrap: wrap;
 	}
 
 	.dropdownBloc .dropdown {
 		margin-bottom: 25px;
-		width: 45%;
+		width: 100%;
 	}
 	.AboutBloc .accordeon--content-show {
 		font-size: 18px;
 		max-height: 200px;
 	}
 	.AboutBloc .accordeon__item__title--text {
-		font-size: 15px;
+		font-size: 18px;
 	}
 	.dropdownBloc .accordeon__item__title--text {
 		font-size: 15px;

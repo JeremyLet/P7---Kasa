@@ -5,10 +5,13 @@
 }
 
 .AboutBloc .resultSection {
-	margin-bottom: 21px;
+	margin-bottom: 31px;
 }
 .AboutBloc .resultSection__title {
 	display: none;
+}
+.AboutBloc .dropdowns {
+	height: 879px;
 }
 
 .AboutBloc .accordeon {
@@ -31,10 +34,6 @@
 	.AboutBloc .resultSection {
 		margin-bottom: 0px;
 	}
-	.AboutBloc .resultSection__background {
-		position: relative;
-		bottom: 15px;
-	}
 }
 
 @media all and (max-width: 375px) {
@@ -44,8 +43,6 @@
 	.AboutBloc .resultSection {
 		height: 223px;
 		margin-bottom: 19px;
-		position: relative;
-		top: 0px;
 	}
 	.AboutBloc .resultSection__background {
 		height: 223px;

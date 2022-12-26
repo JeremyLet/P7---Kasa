@@ -13,7 +13,6 @@ function App() {
 					<Route index element={<Home />} />
 					<Route path="/About" element={<About />} />
 					<Route path="/FicheLogement/:id" element={<FicheLogement />} />
-
 					<Route path="/error" element={<Error404 />} />
 					<Route path="*" element={<Navigate to="/error" />} />
 				</Route>

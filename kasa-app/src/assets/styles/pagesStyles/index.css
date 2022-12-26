@@ -5,7 +5,7 @@ body {
 
 #root {
 	width: 100%;
-	height: 1024px;
+	/* height: 1024px; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -21,6 +21,6 @@ body {
 @media all and (max-width: 375px) {
 	#root {
 		width: 100%;
-		height: 812px;
+		/* height: 812px; */
 	}
 }

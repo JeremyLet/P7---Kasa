@@ -10,16 +10,18 @@ const About = () => {
 		<>
 			<div className="AboutBloc">
 				<Section1 className="AboutBLoc__image" />
-				{[...Array(4)].map((index, nom) => {
-					return (
-						<Dropdown
-							key={index}
-							title={Commercials[nom].nom}
-							details={Commercials[nom].details}
-							vector={VectorDOWN}
-						/>
-					);
-				})}
+				<div className="AboutBloc__dropdowns">
+					{[...Array(4)].map((index, nom) => {
+						return (
+							<Dropdown
+								key={index}
+								title={Commercials[nom].nom}
+								details={Commercials[nom].details}
+								vector={VectorDOWN}
+							/>
+						);
+					})}
+				</div>
 			</div>
 			<Footer />
 		</>

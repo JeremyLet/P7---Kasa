@@ -18,7 +18,7 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	bottom: 276px;
+	bottom: 266px;
 }
 
 .Carrousel--image {
@@ -55,26 +55,13 @@
 
 @media all and (max-width: 992px) {
 	.Carrousel {
+		height: 300px;
 		margin: 0px 20px;
-	}
-}
-
-@media all and (max-width: 375px) {
-	.Carrousel {
-		height: 255px;
-		margin-bottom: 15px;
-	}
-	.Carrousel--image {
-		border-radius: 10px;
 	}
 	.Carrousel__buttons {
 		padding: 0px;
-		bottom: 142px;
+		bottom: 162px;
 	}
-	.Carrousel__status {
-		display: none;
-	}
-
 	.Carrousel__buttons--vectorG {
 		width: 24px;
 		height: 24px;
@@ -89,5 +76,22 @@
 	.Carrousel__buttons--vectorD {
 		width: 24px;
 		height: 24px;
+	}
+	.Carrousel__status {
+		display: none;
+	}
+}
+
+@media all and (max-width: 375px) {
+	.Carrousel {
+		height: 255px;
+		margin-bottom: 15px;
+	}
+	.Carrousel--image {
+		border-radius: 10px;
+	}
+	.Carrousel__buttons {
+		padding: 0px;
+		bottom: 142px;
 	}
 }

@@ -25,6 +25,9 @@
 	height: 100%;
 	filter: brightness(70%);
 	border-radius: 25px;
+}
+
+.Home .resultSection__background {
 	position: relative;
 	bottom: 68px;
 }

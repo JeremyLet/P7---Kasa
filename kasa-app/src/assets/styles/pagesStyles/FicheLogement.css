@@ -25,22 +25,27 @@
 }
 
 @media all and (max-width: 992px) {
-	.Body {
-		width: 100%;
-	}
 	.BodyBloc {
-		height: 250px;
-		margin: 20px;
-		flex-direction: column;
-		align-items: center;
+		height: fit-content;
+		margin: 30px 20px;
 		flex-wrap: wrap;
 	}
-
+	.BodyBloc__details {
+		height: 121px;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
 	.RateHostBloc {
+		width: 100%;
 		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	.TagsBloc {
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }
 
@@ -50,6 +55,7 @@
 	}
 	.BodyBloc {
 		height: 150px;
+		margin: 15px 20px;
 		flex-direction: column;
 		align-items: flex-start;
 		flex-wrap: wrap;
@@ -57,6 +63,8 @@
 	.BodyBloc__details {
 		width: 100%;
 		height: 101px;
+		justify-content: flex-start;
+		align-items: flex-start;
 	}
 	.RateHostBloc {
 		width: 100%;
@@ -67,6 +75,6 @@
 		justify-content: space-between;
 	}
 	.TagsBloc {
-		justify-content: space-between;
+		justify-content: flex-start;
 	}
 }
