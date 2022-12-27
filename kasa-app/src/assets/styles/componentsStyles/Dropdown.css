@@ -1,9 +1,5 @@
 /* BLOC DE  STYLE GENERAL (Desktop) */
 
-.dropdown {
-	font-weight: 500;
-}
-
 .accordeon__item {
 	cursor: pointer;
 }
@@ -17,14 +13,13 @@
 }
 
 .accordeon__item__title--vectors {
-	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .accordeon--content {
-	color: #ff6060;
+	color: #f7f7f7;
 	max-height: 0;
 	overflow: hidden;
 	transition: all 0.5s cubic-bezier(0, 1, 0, 1);
@@ -41,21 +36,17 @@
 	list-style-type: none;
 }
 .vectorDown {
-	width: 82.5%;
-	height: 48.6%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .vectorUp {
-	width: 82.5%;
-	height: 48.6%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-/* BLOC DE STYLE POUR LA PAGE FICHE LOGEMENT (Desktop) */
+/* Spécifications partie FICHE LOGEMENT (Desktop) */
 
 .dropdownBloc {
 	margin: 0px 100px;
@@ -74,8 +65,8 @@
 
 .dropdownBloc .accordeon__item__title--text {
 	font-size: 18px;
-	font-weight: 500;
 	margin-left: 20px;
+	font-weight: 500;
 }
 
 .dropdownBloc .accordeon__item__title--vectors {
@@ -97,7 +88,7 @@
 	line-height: 25.67px;
 }
 
-/* BLOC DE STYLE POUR LA PAGE ABOUT (Desktop) */
+/* Spécifications partie A PROPOS (Desktop) */
 
 .AboutBloc .dropdown {
 	margin: auto;
@@ -113,11 +104,6 @@
 .AboutBloc .accordeon__item__title--text {
 	font-size: 24px;
 	font-weight: 500;
-}
-
-.AboutBloc .accordeon__item__title--vectors {
-	width: 28.92px;
-	height: 28.92px;
 }
 
 .AboutBloc .accordeon--content {
@@ -164,9 +150,11 @@
 
 	.AboutBloc .accordeon--content-show {
 		font-size: 14px;
+		text-align: justify;
 	}
 	.dropdownBloc .accordeon--content-show {
 		font-size: 14px;
+		text-align: justify;
 	}
 }
 
@@ -178,7 +166,6 @@
 	}
 
 	.dropdownBloc .dropdown {
-		width: 100%;
 		margin-bottom: 50px;
 	}
 
@@ -192,12 +179,10 @@
 	}
 
 	.dropdownBloc .accordeon--content {
-		color: #ff6060;
 		font-size: 12px;
 	}
 
 	.dropdownBloc .accordeon--content-show {
-		text-align: justify;
 		font-size: 12px;
 		line-height: 17.11px;
 		max-height: 143px;
@@ -216,7 +201,6 @@
 	.AboutBloc .dropdown {
 		margin: auto;
 		margin-bottom: 31px;
-		z-index: 9999;
 	}
 
 	.AboutBloc .accordeon__item__title {
@@ -229,20 +213,15 @@
 		margin-left: 11.51px;
 	}
 	.AboutBloc .accordeon--content {
-		color: #ff6060;
 		font-size: 12px;
 	}
 	.AboutBloc .accordeon--content-show {
-		text-align: justify;
 		font-size: 12px;
 		line-height: 17.11px;
 		max-height: 143px;
 		padding: 17.31px 5.77px 6.91px 11.51px;
 	}
 	.AboutBloc .accordeon__item__title--vectors {
-		width: 18.42px;
-		height: 18.42px;
 		margin-right: 5.77px;
-		z-index: 9999;
 	}
 }

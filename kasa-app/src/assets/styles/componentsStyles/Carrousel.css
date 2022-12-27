@@ -1,7 +1,6 @@
 .Carrousel {
 	height: 415px;
-	margin-bottom: 30px;
-	margin: 0px 100px;
+	margin: 0px 100px 30px 100px;
 }
 
 .Carrousel__status {

@@ -11,10 +11,6 @@
 	.Home {
 		margin: 0px 20px;
 	}
-	.Home .resultSection__background {
-		background-image: url("/src/assets//images/BannerLandingImage.png");
-		background-size: cover;
-	}
 }
 
 @media all and (max-width: 375px) {
@@ -31,7 +27,7 @@
 	.Home .resultSection__background {
 		background-image: url("/src/assets//images/BannerLandingMobile.png");
 		background-size: cover;
-		height: 111px;
+		height: 100%;
 		bottom: 68px;
 	}
 }

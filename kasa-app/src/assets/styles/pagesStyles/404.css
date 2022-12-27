@@ -19,6 +19,7 @@
 	color: #ff6060;
 	font-weight: 500;
 	height: fit-content;
+	text-align: center;
 	margin: 0;
 	margin-bottom: 182px;
 }
@@ -35,7 +36,6 @@
 		font-size: 144px;
 	}
 	.__BlocError404--Details {
-		text-align: center;
 		font-size: 18px;
 	}
 	.__BlocError404--returnLanding {
@@ -46,18 +46,14 @@
 @media all and (max-width: 375px) {
 	.__BlocError404--Title {
 		height: 99px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 178px;
 		font-size: 96px;
+		margin-top: 178px;
 		margin-bottom: 11px;
 	}
 
 	.__BlocError404--Details {
 		font-size: 18px;
 		height: 52px;
-		text-align: center;
 		margin-bottom: 133px;
 	}
 

@@ -5,6 +5,7 @@
 }
 
 .AboutBloc .resultSection {
+	height: 223px;
 	margin-bottom: 31px;
 }
 .AboutBloc .resultSection__title {
@@ -33,20 +34,12 @@
 		margin: 0px;
 	}
 	.AboutBloc .resultSection {
-		margin-bottom: 0px;
+		margin-bottom: 19px;
 	}
 }
 
 @media all and (max-width: 375px) {
-	.AboutBloc .resultSection__title {
-		display: none;
-	}
-	.AboutBloc .resultSection {
-		height: 223px;
-		margin-bottom: 19px;
-	}
 	.AboutBloc .resultSection__background {
-		height: 223px;
 		background-image: url("/src/assets/images/BannerAboutImageMobile.png");
 		background-size: cover;
 	}

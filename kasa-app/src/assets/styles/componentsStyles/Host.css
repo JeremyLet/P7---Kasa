@@ -22,7 +22,6 @@
 
 @media all and (max-width: 375px) {
 	.Host--name {
-		width: min-content;
 		font-size: 12px;
 		display: flex;
 		align-items: center;
