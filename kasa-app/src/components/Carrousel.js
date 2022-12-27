@@ -48,6 +48,10 @@ class Carrousel extends React.Component {
 					className="Carrousel--image"
 				/>
 
+				<p className="Carrousel__status">
+					{this.state.compteurValue}/{this.props.pictures.length}
+				</p>
+
 				{this.state.max > 1 ? (
 					<div className="Carrousel__buttons">
 						<button
@@ -72,10 +76,6 @@ class Carrousel extends React.Component {
 						</button>
 					</div>
 				) : null}
-
-				<p className="Carrousel__status">
-					{this.state.compteurValue}/{this.props.pictures.length}
-				</p>
 			</div>
 		);
 	}

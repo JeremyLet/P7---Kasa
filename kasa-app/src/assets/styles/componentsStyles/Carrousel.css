@@ -10,7 +10,7 @@
 	font-weight: 500;
 	margin: 0;
 	position: relative;
-	bottom: 127px;
+	bottom: 47.32px;
 	text-align: center;
 }
 
@@ -18,7 +18,7 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	bottom: 266px;
+	bottom: 300px;
 }
 
 .Carrousel--image {
@@ -26,7 +26,6 @@
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	z-index: -1;
 }
 
 .Carrousel__buttons--vectorG {

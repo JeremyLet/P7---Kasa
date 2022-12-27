@@ -4,6 +4,7 @@
 
 .Home .resultSection__background {
 	background-image: url("/src/assets//images/BannerLandingImage.png");
+	background-size: cover;
 }
 
 @media all and (max-width: 992px) {
@@ -12,7 +13,7 @@
 	}
 	.Home .resultSection__background {
 		background-image: url("/src/assets//images/BannerLandingImage.png");
-		object-fit: cover;
+		background-size: cover;
 	}
 }
 
@@ -29,6 +30,7 @@
 
 	.Home .resultSection__background {
 		background-image: url("/src/assets//images/BannerLandingMobile.png");
+		background-size: cover;
 		height: 111px;
 		bottom: 68px;
 	}

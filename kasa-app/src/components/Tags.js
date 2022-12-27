@@ -1,5 +1,5 @@
 import "../assets/styles/componentsStyles/Tags.css";
 
 export default function Tags(props) {
-	return <div className="Tags">{props.tags}</div>;
+	return <span className="Tags">{props.tags}</span>;
 }

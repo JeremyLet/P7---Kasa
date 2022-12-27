@@ -21,6 +21,7 @@
 
 .AboutBloc .resultSection__background {
 	background-image: url("/src/assets/images/BannerAboutImage.png");
+	background-size: cover;
 }
 
 @media all and (max-width: 992px) {
@@ -47,5 +48,6 @@
 	.AboutBloc .resultSection__background {
 		height: 223px;
 		background-image: url("/src/assets/images/BannerAboutImageMobile.png");
+		background-size: cover;
 	}
 }
