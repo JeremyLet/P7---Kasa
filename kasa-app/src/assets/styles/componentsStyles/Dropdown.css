@@ -3,7 +3,6 @@
 .accordeon__item {
 	cursor: pointer;
 }
-
 .accordeon__item__title {
 	background: #ff6060;
 	color: #fff;
@@ -11,13 +10,11 @@
 	justify-content: space-between;
 	align-items: center;
 }
-
 .accordeon__item__title--vectors {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
 .accordeon--content {
 	color: #f7f7f7;
 	max-height: 0;
@@ -29,7 +26,6 @@
 	max-height: 9999;
 	transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
-
 .accordeon--content-show {
 	background-color: #f7f7f7;
 	color: #ff6060;
@@ -46,41 +42,36 @@
 	align-items: center;
 }
 
-/* Spécifications partie FICHE LOGEMENT (Desktop) */
+/* DESKTOP => Page Fiche Logement */
 
 .DetailsBlocContainer__Dropdowns {
 	margin: 0px 100px;
 	display: flex;
 	justify-content: space-between;
 }
-
 .DetailsBlocContainer__Dropdowns .dropdown {
 	width: 47%;
 }
-
 .DetailsBlocContainer__Dropdowns .accordeon__item__title {
 	height: 52px;
 	border-radius: 10px;
 }
-
 .DetailsBlocContainer__Dropdowns .accordeon__item__title--text {
 	font-size: 18px;
 	margin-left: 20px;
 	font-weight: 500;
 }
-
 .DetailsBlocContainer__Dropdowns .accordeon__item__title--vectors {
 	width: 32px;
 	height: 32px;
 	margin-right: 10px;
 }
-
 .DetailsBlocContainer__Dropdowns .accordeon--content {
 	font-size: 18px;
 	font-weight: 400;
 }
-
 .DetailsBlocContainer__Dropdowns .accordeon--content-show {
+	text-align: justify;
 	font-size: 18px;
 	height: 249px;
 	border-radius: 10px;
@@ -88,87 +79,84 @@
 	line-height: 25.67px;
 }
 
-/* Spécifications partie A PROPOS (Desktop) */
+/* DESKTOP => Page A propos */
 
 .AboutBloc .dropdown {
 	margin: auto;
 	margin-bottom: 29px;
 }
-
 .AboutBloc .accordeon__item__title {
 	height: 47px;
 	border-radius: 5px;
 	padding: 0px 18px 0px 30px;
 }
-
 .AboutBloc .accordeon__item__title--text {
 	font-size: 24px;
 	font-weight: 500;
 }
-
 .AboutBloc .accordeon--content {
 	font-size: 24px;
 	font-weight: 400;
 }
-
 .AboutBloc .accordeon--content-show {
+	text-align: justify;
 	font-size: 24px;
-	max-height: 223px;
+	max-height: 233px;
 	border-radius: 5px;
 	padding: 36px 27px 19px 18px;
 }
 
-/* RESPONSIVE TABLET */
+/* RESPONSIVE TABLET (Fiche Logement puis A propos)*/
 
 @media all and (max-width: 992px) {
+	/* Tablet => Page Fiche Logement */
+
 	.DetailsBlocContainer__Dropdowns {
 		margin: 0px 20px;
 		flex-wrap: wrap;
 	}
-
 	.DetailsBlocContainer__Dropdowns .dropdown {
 		margin-bottom: 25px;
 		width: 100%;
 	}
-	.AboutBloc .accordeon--content-show {
-		font-size: 18px;
-		max-height: 200px;
-	}
-	.AboutBloc .accordeon__item__title--text {
-		font-size: 18px;
-	}
 	.DetailsBlocContainer__Dropdowns .accordeon__item__title--text {
 		font-size: 15px;
 	}
-
-	.AboutBloc .accordeon--content {
-		font-size: 14px;
-	}
 	.DetailsBlocContainer__Dropdowns .accordeon--content {
-		font-size: 14px;
-	}
-
-	.AboutBloc .accordeon--content-show {
-		font-size: 14px;
-		text-align: justify;
+		font-size: 16px;
 	}
 	.DetailsBlocContainer__Dropdowns .accordeon--content-show {
-		font-size: 14px;
-		text-align: justify;
+		font-size: 16px;
+		height: 260px;
+		padding: 18px;
+	}
+
+	/* Tablet => Page A propos */
+
+	.AboutBloc .accordeon__item__title--text {
+		font-size: 18px;
+	}
+	.AboutBloc .accordeon--content {
+		font-size: 16px;
+	}
+	.AboutBloc .accordeon--content-show {
+		font-size: 16px;
+		padding: 18px;
+		max-height: 200px;
 	}
 }
 
-/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE (Fiche Logement puis A propos) */
 
 @media all and (max-width: 375px) {
+	/* Mobile => Fiche Logement */
+
 	.DetailsBlocContainer__Dropdowns {
 		flex-direction: column;
 	}
-
 	.DetailsBlocContainer__Dropdowns .dropdown {
 		margin-bottom: 50px;
 	}
-
 	.DetailsBlocContainer__Dropdowns .accordeon__item__title {
 		height: 29.93px;
 		border-radius: 5px;
@@ -177,11 +165,9 @@
 		font-size: 13px;
 		margin-left: 11.51px;
 	}
-
 	.DetailsBlocContainer__Dropdowns .accordeon--content {
 		font-size: 12px;
 	}
-
 	.DetailsBlocContainer__Dropdowns .accordeon--content-show {
 		font-size: 12px;
 		line-height: 17.11px;
@@ -198,11 +184,12 @@
 		margin-right: 5.77px;
 	}
 
+	/* Mobile => Page A propos */
+
 	.AboutBloc .dropdown {
 		margin: auto;
 		margin-bottom: 31px;
 	}
-
 	.AboutBloc .accordeon__item__title {
 		height: 30px;
 		border-radius: 5px;
@@ -223,5 +210,13 @@
 	}
 	.AboutBloc .accordeon__item__title--vectors {
 		margin-right: 5.77px;
+	}
+	.vectorDown {
+		width: 8.96px;
+		height: 15.2px;
+	}
+	.vectorUp {
+		width: 8.96px;
+		height: 15.2px;
 	}
 }

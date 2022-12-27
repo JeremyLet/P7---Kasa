@@ -34,13 +34,11 @@
 	.StarVote {
 		width: 18px;
 		height: 18px;
-		font-size: 15px;
-		margin-left: 5px;
+		font-size: 18px;
 	}
 	.StarEmpty {
 		width: 18px;
 		height: 18px;
 		font-size: 15px;
-		margin-left: 5px;
 	}
 }

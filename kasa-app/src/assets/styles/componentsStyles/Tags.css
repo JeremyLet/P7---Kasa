@@ -22,8 +22,7 @@
 
 @media all and (max-width: 375px) {
 	.Tags {
-		width: 84px;
-		padding: 0px 8px;
+		min-width: 84px;
 		height: 18px;
 		font-size: 10px;
 		flex-wrap: wrap;
