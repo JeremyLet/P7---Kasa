@@ -21,16 +21,16 @@ export default function FicheLogement() {
 			<>
 				<div className="Body">
 					<Carrousel cover={result.pictures[0]} pictures={result.pictures} />
-					<div className="BodyBloc">
-						<div className="BodyBloc__details">
+					<div className="DetailsBlocContainer">
+						<div className="DetailsBlocContainer__Title">
 							<Title title={result.title} location={result.location} />
-							<div className="TagsBloc">
+							<div className="DetailsBlocContainer__Tags">
 								{result.tags.map((tags) => {
 									return <Tags key={tags} tags={tags} />;
 								})}
 							</div>
 						</div>
-						<div className="RateHostBloc">
+						<div className="DetailsBlocContainer__RateHost">
 							<Host
 								hostName={result.host.name}
 								hostPicture={result.host.picture}
@@ -38,7 +38,7 @@ export default function FicheLogement() {
 							<StarScale starValue={result.rating} />
 						</div>
 					</div>
-					<div className="dropdownBloc">
+					<div className="DetailsBlocContainer__Dropdowns">
 						<Dropdown
 							title="Description"
 							details={result.description}

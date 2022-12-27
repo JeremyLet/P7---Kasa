@@ -48,39 +48,39 @@
 
 /* Spécifications partie FICHE LOGEMENT (Desktop) */
 
-.dropdownBloc {
+.DetailsBlocContainer__Dropdowns {
 	margin: 0px 100px;
 	display: flex;
 	justify-content: space-between;
 }
 
-.dropdownBloc .dropdown {
+.DetailsBlocContainer__Dropdowns .dropdown {
 	width: 47%;
 }
 
-.dropdownBloc .accordeon__item__title {
+.DetailsBlocContainer__Dropdowns .accordeon__item__title {
 	height: 52px;
 	border-radius: 10px;
 }
 
-.dropdownBloc .accordeon__item__title--text {
+.DetailsBlocContainer__Dropdowns .accordeon__item__title--text {
 	font-size: 18px;
 	margin-left: 20px;
 	font-weight: 500;
 }
 
-.dropdownBloc .accordeon__item__title--vectors {
+.DetailsBlocContainer__Dropdowns .accordeon__item__title--vectors {
 	width: 32px;
 	height: 32px;
 	margin-right: 10px;
 }
 
-.dropdownBloc .accordeon--content {
+.DetailsBlocContainer__Dropdowns .accordeon--content {
 	font-size: 18px;
 	font-weight: 400;
 }
 
-.dropdownBloc .accordeon--content-show {
+.DetailsBlocContainer__Dropdowns .accordeon--content-show {
 	font-size: 18px;
 	height: 249px;
 	border-radius: 10px;
@@ -121,12 +121,12 @@
 /* RESPONSIVE TABLET */
 
 @media all and (max-width: 992px) {
-	.dropdownBloc {
+	.DetailsBlocContainer__Dropdowns {
 		margin: 0px 20px;
 		flex-wrap: wrap;
 	}
 
-	.dropdownBloc .dropdown {
+	.DetailsBlocContainer__Dropdowns .dropdown {
 		margin-bottom: 25px;
 		width: 100%;
 	}
@@ -137,14 +137,14 @@
 	.AboutBloc .accordeon__item__title--text {
 		font-size: 18px;
 	}
-	.dropdownBloc .accordeon__item__title--text {
+	.DetailsBlocContainer__Dropdowns .accordeon__item__title--text {
 		font-size: 15px;
 	}
 
 	.AboutBloc .accordeon--content {
 		font-size: 14px;
 	}
-	.dropdownBloc .accordeon--content {
+	.DetailsBlocContainer__Dropdowns .accordeon--content {
 		font-size: 14px;
 	}
 
@@ -152,7 +152,7 @@
 		font-size: 14px;
 		text-align: justify;
 	}
-	.dropdownBloc .accordeon--content-show {
+	.DetailsBlocContainer__Dropdowns .accordeon--content-show {
 		font-size: 14px;
 		text-align: justify;
 	}
@@ -161,28 +161,28 @@
 /* RESPONSIVE MOBILE */
 
 @media all and (max-width: 375px) {
-	.dropdownBloc {
+	.DetailsBlocContainer__Dropdowns {
 		flex-direction: column;
 	}
 
-	.dropdownBloc .dropdown {
+	.DetailsBlocContainer__Dropdowns .dropdown {
 		margin-bottom: 50px;
 	}
 
-	.dropdownBloc .accordeon__item__title {
+	.DetailsBlocContainer__Dropdowns .accordeon__item__title {
 		height: 29.93px;
 		border-radius: 5px;
 	}
-	.dropdownBloc .accordeon__item__title--text {
+	.DetailsBlocContainer__Dropdowns .accordeon__item__title--text {
 		font-size: 13px;
 		margin-left: 11.51px;
 	}
 
-	.dropdownBloc .accordeon--content {
+	.DetailsBlocContainer__Dropdowns .accordeon--content {
 		font-size: 12px;
 	}
 
-	.dropdownBloc .accordeon--content-show {
+	.DetailsBlocContainer__Dropdowns .accordeon--content-show {
 		font-size: 12px;
 		line-height: 17.11px;
 		max-height: 143px;
@@ -192,7 +192,7 @@
 		justify-content: center;
 		align-items: flex-start;
 	}
-	.dropdownBloc .accordeon__item__title--vectors {
+	.DetailsBlocContainer__Dropdowns .accordeon__item__title--vectors {
 		width: 18.42px;
 		height: 18.42px;
 		margin-right: 5.77px;

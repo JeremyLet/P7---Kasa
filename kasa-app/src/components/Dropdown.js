@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Dropdown(props) {
 	const [selected, setSelected] = useState(null);
 
-	const toggle = (e) => {
+	const toggle = () => {
 		if (selected === "OK") {
 			return setSelected(null);
 		}
