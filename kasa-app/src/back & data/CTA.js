@@ -1,3 +1,8 @@
+/**
+ * Commercial infos for various CTA (prevent large texts in component creation)
+ * @param  { array }   CTA : Each CTA / commercial infos necessary for the Kasa project
+ */
+
 let Commercials = [
 	{
 		nom: "Fiabilité",

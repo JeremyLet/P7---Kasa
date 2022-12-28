@@ -1,3 +1,5 @@
+/* THUMB COMPONENT STYLE FOR DESKTOP */
+
 .ThumbBloc__link {
 	text-decoration: none;
 	width: 340px;
@@ -23,6 +25,9 @@
 	align-items: flex-start;
 	margin: 0px 20px 20px 20px;
 }
+
+/* THUMB COMPONENT STYLE FOR TABLET */
+
 @media all and (max-width: 992px) {
 	.ThumbBloc__link {
 		width: 450px;
@@ -31,11 +36,14 @@
 	}
 }
 
+/* THUMB COMPONENT STYLE FOR MOBILE */
+
 @media all and (max-width: 375px) {
 	.ThumbBloc__link {
 		width: 100%;
 		margin: 0px 0px 20px 0px;
 	}
+
 	.ThumbBloc__title {
 		margin: 0px 19.71px 15px 19.71px;
 		bottom: 68px;

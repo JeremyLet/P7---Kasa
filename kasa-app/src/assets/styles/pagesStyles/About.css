@@ -1,3 +1,5 @@
+/* ABOUT PAGE STYLE FOR DESKTOP */
+
 .AboutBloc {
 	margin: 0px 100px;
 	display: flex;
@@ -8,9 +10,11 @@
 	height: 223px;
 	margin-bottom: 31px;
 }
+
 .AboutBloc .resultSection__title {
 	display: none;
 }
+
 .AboutBloc .dropdowns {
 	height: 879px;
 }
@@ -25,18 +29,24 @@
 	background-size: cover;
 }
 
+/* ABOUT PAGE STYLE FOR TABLET */
+
 @media all and (max-width: 992px) {
 	.AboutBloc {
 		margin: 0px 20px;
 	}
+
 	.AboutBloc .accordeon {
 		width: 100%;
 		margin: 0px;
 	}
+
 	.AboutBloc .resultSection {
 		margin-bottom: 19px;
 	}
 }
+
+/* ABOUT PAGE STYLE FOR MOBILE */
 
 @media all and (max-width: 375px) {
 	.AboutBloc .resultSection__background {

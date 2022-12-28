@@ -1,3 +1,5 @@
+/* RATING COMPONENT STYLE FOR DESKTOP */
+
 .StarScaleBloc {
 	width: 196px;
 	height: 36px;
@@ -15,6 +17,7 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .StarEmpty {
 	color: #e3e3e3;
 	font-size: 30px;
@@ -24,6 +27,8 @@
 	justify-content: center;
 	align-items: center;
 }
+
+/* SECTION1 COMPONENT STYLE FOR MOBILE */
 
 @media all and (max-width: 375px) {
 	.StarScaleBloc {
@@ -36,6 +41,7 @@
 		height: 18px;
 		font-size: 18px;
 	}
+
 	.StarEmpty {
 		width: 18px;
 		height: 18px;

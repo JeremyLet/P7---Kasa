@@ -1,3 +1,9 @@
+/**
+ * Creating the Title component
+ * @param  { url }      Style : importing the CSS Style for Title component
+ * @return { function } Function : Creating the Title Component with props from Fiche Logement parent component
+ */
+
 import "../assets/styles/componentsStyles/Title.css";
 
 export default function Title(props) {

@@ -1,5 +1,7 @@
+/* TAGS COMPONENT STYLE FOR DESKTOP */
+
 .Tags {
-	font-size: 14px;
+	font-size: clamp(0.625rem, 2vw + 1rem, 1.125rem);
 	color: #fff;
 	white-space: nowrap;
 	background-color: #ff6060;
@@ -14,11 +16,15 @@
 	padding: 0px 4px;
 }
 
+/* TAGS COMPONENT STYLE FOR TABLET */
+
 @media all and (max-width: 992px) {
 	.Tags {
 		margin: 10px;
 	}
 }
+
+/* TAGS COMPONENT STYLE FOR MOBILE */
 
 @media all and (max-width: 375px) {
 	.Tags {

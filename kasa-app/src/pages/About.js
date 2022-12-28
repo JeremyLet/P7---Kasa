@@ -1,9 +1,15 @@
+/**
+ * Creating the About Page
+ * @param  { url }      Style : importing the CSS Style for About Page
+ * @param  { url }      Components : importing various components for creation of page (Section, Footer, Collapses, Commercial infos)
+ * @return { function } Function : Creating the  About page with necessary components
+ */
+
 import "../assets/styles/pagesStyles/About.css";
 import Section1 from "../components/Section1";
 import Footer from "../components/Footer";
 import Dropdown from "../components/Dropdown";
 import Commercials from "../back & data/CTA";
-import VectorDOWN from "../assets/images/VectorDOWN.svg";
 
 const About = () => {
 	return (
@@ -17,7 +23,6 @@ const About = () => {
 								key={index}
 								title={Commercials[nom].nom}
 								details={Commercials[nom].details}
-								vector={VectorDOWN}
 							/>
 						);
 					})}

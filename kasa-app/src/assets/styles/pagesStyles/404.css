@@ -1,3 +1,5 @@
+/* 404 PAGE STYLE FOR DESKTOP */
+
 .BlocError404 {
 	display: flex;
 	flex-direction: column;
@@ -31,17 +33,23 @@
 	text-decoration: underline;
 }
 
+/* 404 PAGE STYLE FOR TABLET */
+
 @media all and (max-width: 992px) {
 	.BlocError404--Title {
 		font-size: 144px;
 	}
+
 	.BlocError404--Details {
 		font-size: 18px;
 	}
+
 	.BlocError404--returnLanding {
 		font-size: 10px;
 	}
 }
+
+/* 404 PAGE STYLE FOR MOBILE */
 
 @media all and (max-width: 375px) {
 	.BlocError404--Title {

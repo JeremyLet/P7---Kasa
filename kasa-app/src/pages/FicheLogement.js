@@ -1,8 +1,16 @@
+/**
+ * Creating the Fiche Logement Page
+ * @param  { object }   Modules : Importing useParams and Navigate for getting ID of vacation place + Navigate for redirect when error
+ * @param  { url }      Style : importing the CSS Style for Fiche Logement Page
+ * @param  { url }      Components : importing various components for creation of page (Carrousel, Collapses, Titles, Tages, Footer, HostInfos or RateSystem)
+ * @return { function } Function : Creating the  Fiche Logement page with necessary components
+ */
+
+// MODULES AND STYLE
 import { useParams, Navigate } from "react-router-dom";
 import "../assets/styles/pagesStyles/FicheLogement.css";
-import VectorUP from "../assets/images/VectorUP.svg";
 
-// COMPOSANTS
+// COMPONENTS
 import Carrousel from "../components/Carrousel";
 import Title from "../components/Title";
 import Host from "../components/Host";
@@ -39,11 +47,7 @@ export default function FicheLogement() {
 						</div>
 					</div>
 					<div className="DetailsBlocContainer__Dropdowns">
-						<Dropdown
-							title="Description"
-							details={result.description}
-							vector={VectorUP}
-						/>
+						<Dropdown title="Description" details={result.description} />
 						<Dropdown
 							title="Equipements"
 							details={result.equipments.map((equipments) => {
@@ -53,7 +57,6 @@ export default function FicheLogement() {
 									</li>
 								);
 							})}
-							vector={VectorUP}
 						/>
 					</div>
 				</div>

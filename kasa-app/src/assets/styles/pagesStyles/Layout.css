@@ -1,3 +1,5 @@
+/* LAYOUT STYLE FOR DESKTOP */
+
 .LayoutHeader {
 	margin: 40px 100px 60px 100px;
 	height: 68px;
@@ -37,24 +39,29 @@
 	width: 210.32px;
 }
 
-/* FORMATS RESPONSIVES */
+/* LAYOUT STYLE FOR TABLET */
 
 @media all and (max-width: 992px) {
 	.LayoutHeader {
 		margin: 20px;
 	}
+
 	.LOGO {
 		width: 145px;
 		height: 47px;
 	}
+
 	.LayoutHeader__Nav--Links {
 		margin-left: 10px;
 		font-size: 20px;
 	}
+
 	.LayoutHeader__Nav--List {
 		justify-content: flex-end;
 	}
 }
+
+/* LAYOUT STYLE FOR MOBILE */
 
 @media all and (max-width: 375px) {
 	.LayoutHeader {
@@ -72,9 +79,11 @@
 		width: 145px;
 		height: 47px;
 	}
+
 	.LayoutHeader__Nav--List {
 		font-size: 12px;
 	}
+
 	.LayoutHeader__Nav--Links {
 		font-size: 12px;
 	}

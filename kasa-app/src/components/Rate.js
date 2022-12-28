@@ -1,3 +1,9 @@
+/**
+ * Creating the Rating component (StarScales)
+ * @param  { url }      Style : importing the CSS Style for Rate component
+ * @return { function } Function : Creating the Rating Component with props (getting from the call of data from backend)
+ */
+
 import "../assets/styles/componentsStyles/Rate.css";
 
 export default function StarScale(props) {

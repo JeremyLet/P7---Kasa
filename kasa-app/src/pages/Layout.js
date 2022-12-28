@@ -1,3 +1,10 @@
+/**
+ * Creating a layout for dynamically retrieving the header on each page
+ * @param  { object }   ReactModules : Import Link and Outlek from react router
+ * @param  { url }      Logo : importing the Kasa Logo for the Header
+ * @return { function } Construction of the layout component
+ */
+
 import { Outlet, Link } from "react-router-dom";
 import "../assets/styles/pagesStyles/Layout.css";
 import LOGOH from "../assets/images/LOGOH.svg";

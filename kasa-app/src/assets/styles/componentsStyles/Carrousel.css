@@ -1,3 +1,5 @@
+/* CARROUSEL COMPONENT STYLE FOR DESKTOP */
+
 .Carrousel {
 	height: 415px;
 	margin: 0px 100px 30px 100px;
@@ -51,15 +53,19 @@
 	border: none;
 }
 
+/* CARROUSEL COMPONENT STYLE FOR TABLET */
+
 @media all and (max-width: 992px) {
 	.Carrousel {
 		height: 300px;
 		margin: 0px 20px;
 	}
+
 	.Carrousel__buttons {
 		padding: 0px;
 		bottom: 162px;
 	}
+
 	.Carrousel__buttons--vectorG {
 		width: 24px;
 		height: 24px;
@@ -75,19 +81,24 @@
 		width: 24px;
 		height: 24px;
 	}
+
 	.Carrousel__status {
 		display: none;
 	}
 }
+
+/* CARROUSEL COMPONENT STYLE FOR MOBILE */
 
 @media all and (max-width: 375px) {
 	.Carrousel {
 		height: 255px;
 		margin-bottom: 15px;
 	}
+
 	.Carrousel--image {
 		border-radius: 10px;
 	}
+
 	.Carrousel__buttons {
 		padding: 0px;
 		bottom: 142px;

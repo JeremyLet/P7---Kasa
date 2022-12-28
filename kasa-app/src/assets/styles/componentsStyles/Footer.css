@@ -1,3 +1,5 @@
+/* FOOTER COMPONENT STYLE FOR DESKTOP */
+
 .FooterBloc {
 	height: 209px;
 	background-color: #000000;
@@ -22,11 +24,15 @@
 	align-items: center;
 }
 
+/* FOOTER COMPONENT STYLE FOR TABLET */
+
 @media all and (max-width: 992px) {
 	.FooterBloc__details--text {
 		font-size: 20px;
 	}
 }
+
+/* FOOTER COMPONENT STYLE FOR MOBILE */
 
 @media all and (max-width: 375px) {
 	.FooterBloc_image {

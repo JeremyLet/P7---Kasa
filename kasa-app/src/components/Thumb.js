@@ -1,3 +1,10 @@
+/**
+ * Creating the Thumb component
+ * @param  { url }      Style : importing the CSS Style for Thumb component
+ * @param  { object }   Module : Import link from react router to allow navigation to dynamic vaction place page
+ * @return { function } Function : Creating the Thumb Component with props (getting from the call of data from backend)
+ */
+
 import "../assets/styles/componentsStyles/Thumb.css";
 import { Link } from "react-router-dom";
 

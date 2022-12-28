@@ -1,3 +1,11 @@
+/**
+ * Creating the Error page (when wrong or unknown Vacation Id or wrong URL)
+ * @param  { object }   Modules : Importing Link from react router to return to landing
+ * @param  { url }      Style : importing the CSS Style for Error Page
+ *  @param  { url }      Component : importing Footer Component
+ * @return { function } Function : Creating the Error page with necessary components
+ */
+
 import { Link } from "react-router-dom";
 import "../assets/styles/pagesStyles/404.css";
 import Footer from "../components/Footer";

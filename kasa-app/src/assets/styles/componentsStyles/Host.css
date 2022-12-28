@@ -1,3 +1,5 @@
+/* HOST COMPONENT STYLE FOR DESKTOP */
+
 .Host {
 	height: 64px;
 	display: flex;
@@ -14,11 +16,14 @@
 	height: 52px;
 	text-align: right;
 }
+
 .Host--picture {
 	border-radius: 90px;
 	width: 64px;
 	height: 64px;
 }
+
+/* HOST COMPONENT STYLE FOR MOBILE */
 
 @media all and (max-width: 375px) {
 	.Host--name {
@@ -27,6 +32,7 @@
 		display: flex;
 		align-items: center;
 	}
+
 	.Host--picture {
 		width: 32px;
 		height: 32px;

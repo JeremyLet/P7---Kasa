@@ -1,3 +1,5 @@
+/* FICHELOGEMENT PAGE STYLE FOR DESKTOP */
+
 .Body {
 	height: 882px;
 	margin-bottom: 40px;
@@ -16,6 +18,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 }
+
 .DetailsBlocContainer__RateHost {
 	height: 121px;
 	display: flex;
@@ -28,21 +31,26 @@
 	display: flex;
 }
 
+/* FICHELOGEMENT PAGE STYLE FOR TABLET */
+
 @media all and (max-width: 992px) {
 	.Body {
 		height: max-content;
 	}
+
 	.DetailsBlocContainer {
 		height: fit-content;
 		margin: 30px 20px;
 		flex-wrap: wrap;
 	}
+
 	.DetailsBlocContainer__Title {
 		height: 121px;
 		width: 100%;
 		justify-content: center;
 		align-items: center;
 	}
+
 	.DetailsBlocContainer__RateHost {
 		width: 100%;
 		display: flex;
@@ -50,16 +58,20 @@
 		justify-content: center;
 		align-items: center;
 	}
+
 	.DetailsBlocContainer__Tags {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
 }
 
+/* FICHELOGEMENT PAGE STYLE FOR MOBILE */
+
 @media all and (max-width: 375px) {
 	.Body {
 		margin: 0px;
 	}
+
 	.DetailsBlocContainer {
 		height: 150px;
 		margin: 15px 20px;
@@ -67,15 +79,18 @@
 		align-items: flex-start;
 		flex-wrap: wrap;
 	}
+
 	.DetailsBlocContainer__Title {
 		height: 101px;
 		justify-content: space-between;
 		align-items: flex-start;
 	}
+
 	.DetailsBlocContainer__RateHost {
 		height: 33px;
 		justify-content: space-between;
 	}
+
 	.DetailsBlocContainer__Tags {
 		justify-content: flex-start;
 	}

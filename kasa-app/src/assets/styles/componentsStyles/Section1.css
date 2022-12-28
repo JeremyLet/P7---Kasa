@@ -1,3 +1,5 @@
+/* SECTION1 COMPONENT STYLE FOR DESKTOP */
+
 .resultSection {
 	height: 223px;
 	border-radius: 25px;
@@ -32,17 +34,22 @@
 	bottom: 68px;
 }
 
+/* SECTION1 COMPONENT STYLE FOR TABLET */
+
 @media all and (max-width: 992px) {
 	.resultSection__title {
 		font-size: 35px;
 	}
 }
 
+/* SECTION1 COMPONENT STYLE FOR MOBILE */
+
 @media all and (max-width: 375px) {
 	.resultSection {
 		margin-bottom: 0px;
 		border-radius: 10px;
 	}
+
 	.resultSection__title {
 		width: 217px;
 		height: 48px;

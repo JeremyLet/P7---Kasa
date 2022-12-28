@@ -1,3 +1,5 @@
+/* HOMEPAGE STYLE FOR DESKTOP */
+
 .Home {
 	margin: 3px 100px 0px 100px;
 }
@@ -7,11 +9,15 @@
 	background-size: cover;
 }
 
+/* HOMEPAGE STYLE FOR TABLET */
+
 @media all and (max-width: 992px) {
 	.Home {
 		margin: 0px 20px;
 	}
 }
+
+/* HOMEPAGE STYLE FOR MOBILE */
 
 @media all and (max-width: 375px) {
 	.Home .resultSection {
@@ -20,6 +26,7 @@
 		top: 16px;
 		margin-bottom: 16px;
 	}
+
 	.Home .resultSection__title {
 		display: block;
 	}
