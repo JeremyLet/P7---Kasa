@@ -64,7 +64,6 @@ export default function FicheLogement() {
 			</>
 		);
 	} else {
-		console.error("Error ID Adress");
 		return <Navigate to="/error" />;
 	}
 }
