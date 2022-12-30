@@ -20,7 +20,7 @@ const About = () => {
 					{[...Array(4)].map((index, nom) => {
 						return (
 							<Dropdown
-								key={index}
+								key={nom}
 								title={Commercials[nom].nom}
 								details={Commercials[nom].details}
 							/>
