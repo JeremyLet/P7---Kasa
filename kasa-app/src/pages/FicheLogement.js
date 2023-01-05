@@ -11,6 +11,7 @@ import { useParams, Navigate } from "react-router-dom";
 import "../assets/styles/pagesStyles/FicheLogement.css";
 
 // COMPONENTS
+import Header from "../components/Header"
 import Carrousel from "../components/Carrousel";
 import Title from "../components/Title";
 import Host from "../components/Host";
@@ -27,6 +28,7 @@ export default function FicheLogement() {
 	if (result !== undefined) {
 		return (
 			<>
+			<Header effet="defaultNavbar"/>
 				<div className="Body">
 					<Carrousel cover={result.pictures[0]} pictures={result.pictures} />
 					<div className="DetailsBlocContainer">

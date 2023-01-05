@@ -8,11 +8,13 @@
 
 import { Link } from "react-router-dom";
 import "../assets/styles/pagesStyles/404.css";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const Error404 = () => {
 	return (
 		<>
+		<Header effet="defaultNavbar"/>
 			<div className="BlocError404">
 				<h1 className="BlocError404--Title">404</h1>
 				<h2 className="BlocError404--Details">
