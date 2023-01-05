@@ -58,7 +58,7 @@
     width: 210.32px;
 }
 
-/* LAYOUT STYLE FOR TABLET */
+/* HEADER STYLE FOR TABLET */
 
 @media all and (max-width: 992px) {
     .HeaderBloc {
