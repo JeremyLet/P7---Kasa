@@ -13,7 +13,9 @@ const Layout = () => {
 	return (
 		<>
 			<header className="LayoutHeader">
+			    <Link to="/">
 				<img src={LOGOH} alt="LOGO" className="LOGO" />
+				</Link>
 				<nav className="LayoutHeader__Nav">
 					<ul className="LayoutHeader__Nav--List">
 						<li>
