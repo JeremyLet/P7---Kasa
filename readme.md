@@ -1,2 +1,13 @@
-Projet 7 KASA - OPENCLASSROOMS
-Réalisation d'une APP WEB de locations d'appartements entre particuliers avec une architecture REACT
+
+## P7 - KASA (Formation OPC)
+# Créer une application web de location immobilière avec React
+
+Construction aavec REACT de l'App pour la marque Kasa.
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run start
+```
+
